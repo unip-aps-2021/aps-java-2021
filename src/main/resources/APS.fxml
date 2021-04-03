@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: #59849C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
+   <children>
+      <HBox prefHeight="21.0" prefWidth="468.0" spacing="15.0" style="-fx-background-color: #C4C4C4;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageResources/MenuBtn.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="30.0" prefWidth="75.0" text="MENU">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="75.0" text="MENU">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="75.0" text="MENU">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="75.0" text="MENU">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_RIGHT" prefHeight="38.0" prefWidth="222.0">
+               <children>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label fx:id="riosLabel" prefHeight="47.0" prefWidth="249.0" text="Rios de SP">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+      <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="350.0" prefWidth="650.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Button fx:id="aba1" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#botao1" onMouseEntered="#sout" prefHeight="25.0" prefWidth="67.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 1" textFill="WHITE" />
+                  <Button fx:id="aba2" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#botao2" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 2" textFill="WHITE" />
+                  <Button fx:id="aba3" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 3" textFill="WHITE" />
+                  <Button fx:id="aba4" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 4" textFill="WHITE" />
+               </children>
+            </VBox>
+            <BarChart fx:id="tabela" layoutX="87.0" prefHeight="331.0" prefWidth="500.0" style="-fx-background-color: #64739B;">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+      <Pane prefHeight="300.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="500.0" layoutX="69.0" pickOnBounds="true">
+               <image>
+                  <Image url="@ImageResources/RioExemplo.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="123.0" prefHeight="50.0" prefWidth="300.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebebe2" height="80.0" layoutX="9.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="375.0" />
+                  <Label layoutX="40.0" layoutY="-2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="80.0" prefWidth="375.0" text="RIO TIO ETÊ" textAlignment="CENTER">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="123.0" layoutY="112.0" prefHeight="110.0" prefWidth="385.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebebe2" height="90.0" layoutX="2.0" layoutY="4.0" opacity="0.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="385.0" />
+                  <Label layoutX="2.0" layoutY="31.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Curiosidades" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</VBox>
