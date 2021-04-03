@@ -18,30 +18,45 @@
    <children>
       <HBox prefHeight="21.0" prefWidth="468.0" spacing="15.0" style="-fx-background-color: #C4C4C4;">
          <children>
-            <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="81.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@ImageResources/MenuBtn.png" />
                </image>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
             </ImageView>
-            <Label prefHeight="30.0" prefWidth="75.0" text="MENU">
+            <Label prefHeight="25.0" prefWidth="75.0" text="MENU">
                <font>
                   <Font size="26.0" />
                </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </Label>
             <Label prefHeight="30.0" prefWidth="75.0" text="MENU">
                <font>
                   <Font size="26.0" />
                </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </Label>
             <Label prefHeight="33.0" prefWidth="75.0" text="MENU">
                <font>
                   <Font size="26.0" />
                </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </Label>
             <Label prefHeight="33.0" prefWidth="75.0" text="MENU">
                <font>
                   <Font size="26.0" />
                </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </Label>
             <HBox alignment="TOP_RIGHT" prefHeight="38.0" prefWidth="222.0">
                <children>

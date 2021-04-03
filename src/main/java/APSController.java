@@ -1,6 +1,5 @@
 import javafx.event.ActionEvent;
 import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
@@ -9,8 +8,6 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
-import java.awt.event.MouseEvent;
 
 public class APSController {
     private final XYChart.Series series1 = new XYChart.Series();
@@ -54,7 +51,6 @@ public class APSController {
     @FXML
     private void botao1(ActionEvent event) {
         addChart(series1, "Samy", 400);
-
     }
 
     @FXML
