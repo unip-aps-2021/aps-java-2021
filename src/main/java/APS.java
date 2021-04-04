@@ -4,7 +4,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -33,7 +37,22 @@ public class APS extends Application {
             }
         });
 
-        Scene scene = new Scene(root, 650, 800);
+        Menu menu = new Menu("Menu");
+
+        CheckMenuItem menuItem1 = new CheckMenuItem("menu item 1");
+        CheckMenuItem menuItem2 = new CheckMenuItem("menu item 2");
+        CheckMenuItem menuItem3 = new CheckMenuItem("menu item 3");
+
+        menu.getItems().add(menuItem1);
+        menu.getItems().add(menuItem2);
+        menu.getItems().add(menuItem3);
+
+        MenuBar menuBar = new MenuBar();
+        menuBar.getMenus().add(menu);
+
+        VBox vBox = new VBox(menuBar);
+
+        Scene scene = new Scene(root, 650, 650);
 
         stage.setScene(scene);
         stage.show();

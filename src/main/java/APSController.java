@@ -7,6 +7,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 
 public class APSController {
@@ -34,6 +35,10 @@ public class APSController {
     private Button exitButton;
 
     @FXML
+    private MenuButton menuButton;
+
+
+    @FXML
     public void initialize() {
         new CategoryAxis().setLabel("Mike");
         new NumberAxis().setLabel("Ueee");
@@ -43,7 +48,6 @@ public class APSController {
         addChart(series1, "Tamanduatei", 250);
         addChart(series1, "Piracicaba", 150);
         addChart(series1, "Anhangabau", 100);
-
 
         tabela.getData().addAll(series1);
     }
