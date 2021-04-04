@@ -63,7 +63,7 @@ public class APSController {
     }
 
     public void sout(Event event) {
-        System.out.println("AAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");;
+        System.out.println("...");
     }
 
     public void exit(ActionEvent event) {

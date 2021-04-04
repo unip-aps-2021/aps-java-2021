@@ -31,39 +31,23 @@
                   <Insets top="10.0" />
                </HBox.margin>
             </MenuButton>
-            <Label prefHeight="25.0" prefWidth="75.0" text="MENU">
+            <Label prefHeight="35.0" prefWidth="226.0" text="Tech Rivers LTDA">
                <font>
-                  <Font size="26.0" />
+                  <Font name="Yu Gothic Regular" size="27.0" />
                </font>
-               <padding>
+               <HBox.margin>
                   <Insets top="10.0" />
-               </padding>
+               </HBox.margin>
             </Label>
-            <Label prefHeight="30.0" prefWidth="75.0" text="MENU">
-               <font>
-                  <Font size="26.0" />
-               </font>
-               <padding>
-                  <Insets top="10.0" />
-               </padding>
-            </Label>
-            <Label prefHeight="33.0" prefWidth="75.0" text="MENU">
-               <font>
-                  <Font size="26.0" />
-               </font>
-               <padding>
-                  <Insets top="10.0" />
-               </padding>
-            </Label>
-            <Label prefHeight="33.0" prefWidth="75.0" text="MENU">
-               <font>
-                  <Font size="26.0" />
-               </font>
-               <padding>
-                  <Insets top="10.0" />
-               </padding>
-            </Label>
-            <HBox alignment="TOP_RIGHT" prefHeight="38.0" prefWidth="222.0">
+            <ImageView fitHeight="32.0" fitWidth="33.0">
+               <image>
+                  <Image url="@ImageResources/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="-15.0" right="145.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="176.0">
                <children>
                   <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
                </children>
