@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.CheckMenuItem?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TesteController">
    <children>
-      <ComboBox layoutX="87.0" layoutY="89.0" prefWidth="150.0" />
       <MenuBar layoutX="8.0" layoutY="2.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
@@ -38,5 +38,8 @@
             <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
         </items>
       </MenuButton>
+      <TextField layoutX="312.0" layoutY="174.0" />
+      <Label fx:id="a" layoutX="14.0" layoutY="32.0" prefHeight="17.0" prefWidth="569.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ullamcorper est, vel placerat elit. Ut lobortis condimentum purus, sed porttitor leo viverra et. Integer interdum non lacus id pellentesque. Proin sed bibendum massa. Nullam eget sagittis ante. Morbi enim est, viverra ut elementum a, sollicitudin suscipit ante. Donec placerat ultrices tempor. Ut ac varius ex, ut volutpat enim. Suspendisse luctus tincidunt dignissim. Nulla enim eros, tempus et bibendum nec, aliquam vel purus. Mauris aliquet luctus ante, eget euismod nunc fringilla non. Vivamus sollicitudin nec lacus faucibus mollis. Aenean posuere, urna in semper tincidunt, neque dolor tempor lectus, ac mollis justo turpis porta sapien. Nunc sagittis euismod felis, id luctus dolor congue in. Vestibulum fermentum odio sit amet ante semper, non tincidunt felis volutpat. Curabitur leo eros, dictum nec risus ut, dapibus aliquet est." />
+      <TextArea layoutX="91.0" layoutY="100.0" prefHeight="211.0" prefWidth="495.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ullamcorper est, vel &#10;placerat elit. Ut lobortis condimentum purus, sed porttitor leo viverra et. Integer interdum non &#10;lacus id pellentesque. Proin sed bibendum massa. Nullam eget sagittis ante. Morbi enim est, &#10;viverra ut elementum a, sollicitudin suscipit ante. Donec placerat ultrices tempor. Ut ac varius ex,&#10; ut volutpat enim. Suspendisse luctus tincidunt dignissim. Nulla enim eros, tempus et bibendum &#10;nec, aliquam vel purus. Mauris aliquet luctus ante, eget euismod nunc fringilla non. Vivamus &#10;sollicitudin nec lacus faucibus mollis. Aenean posuere, urna in semper tincidunt, neque dolor &#10;tempor lectus, ac mollis justo turpis porta sapien. Nunc sagittis euismod felis, id luctus dolor &#10;congue in. Vestibulum fermentum odio sit amet ante semper, non tincidunt felis volutpat. &#10;Curabitur leo eros, dictum nec risus ut, dapibus aliquet est." />
    </children>
 </AnchorPane>
