@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckMenuItem?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
@@ -13,9 +17,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
 
 <VBox alignment="TOP_CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: #59849C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
    <children>
@@ -60,9 +63,9 @@
             <Insets />
          </opaqueInsets>
       </HBox>
-      <Label fx:id="riosLabel" alignment="CENTER" prefHeight="66.0" prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
+      <Label fx:id="riosLabel" alignment="CENTER" prefHeight="66.0" prefWidth="324.0" text="Rios de SP" textFill="WHITE">
          <font>
-            <Font name="SimSun" size="33.0" />
+            <Font name="SimSun" size="45.0" />
          </font>
          <effect>
             <DropShadow>
@@ -74,28 +77,39 @@
       </Label>
       <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="350.0" prefWidth="650.0">
          <children>
-            <Pane layoutX="46.0" layoutY="-5.0" prefHeight="461.0" prefWidth="563.0" style="-fx-background-color: #4967ab;">
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                <children>
-                  <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
-                     <children>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" wrappingWidth="428.7578125">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </TextFlow>
-                  <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="187.0" layoutY="191.0">
-                     <image>
-                        <Image url="@ImageResources/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button layoutX="187.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
-                  <Button layoutX="237.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
-                  <Button layoutX="345.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/lfacebook.png); -fx-background-radius: 100;" text=" " />
-                  <Button layoutX="293.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
+                  <Button fx:id="aba1" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#botao1" onMouseEntered="#sout" prefHeight="25.0" prefWidth="67.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 1" textFill="WHITE" />
+                  <Button fx:id="aba2" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#botao2" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 2" textFill="WHITE" />
+                  <Button fx:id="aba3" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 3" textFill="WHITE" />
+                  <Button fx:id="aba4" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 4" textFill="WHITE" />
                </children>
-            </Pane>
+            </VBox>
+            <BarChart fx:id="tabela" layoutX="88.0" prefHeight="225.0" prefWidth="500.0" style="-fx-background-color: #64739B;">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+      <Pane prefHeight="345.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="439.0" layoutX="123.0" pickOnBounds="true">
+               <image>
+                  <Image url="@ImageResources/RioExemplo.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="123.0" prefHeight="50.0" prefWidth="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebebe2" height="200.0" layoutX="123.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="439.0" />
+            <Label layoutX="249.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="153.0" text="Rio Tio Etê" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" layoutX="129.0" layoutY="41.0" prefHeight="154.0" prefWidth="430.0" styleClass="text-area" stylesheets="@css/index.css" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#10;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#10;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#10;&#10;&#10;" />
          </children>
       </Pane>
    </children>

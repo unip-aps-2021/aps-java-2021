@@ -18,7 +18,7 @@ public class APS extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("teste.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("APS.fxml"));
         stage.initStyle(StageStyle.UNDECORATED);
 
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
