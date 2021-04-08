@@ -1,0 +1,14 @@
+.grafico {
+    -fx-horizontal-grid-lines-visible: false;
+    -fx-vertical-grid-lines-visible:false;
+    -fx-alternative-column-fill-visible: false;
+    -fx-alternative-row-fill-visible: false;
+}
+
+.chart-plot-background{
+    -fx-background-color: transparent;
+}
+
+.chart-bar {
+    -fx-bar-fill: #00fffb;
+}

@@ -17,11 +17,11 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: #59849C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
+<VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
    <children>
-      <HBox prefHeight="21.0" prefWidth="468.0" spacing="15.0" style="-fx-background-color: #C4C4C4;">
+      <HBox prefHeight="21.0" prefWidth="468.0" spacing="15.0" style="-fx-background-color: #FFFFFF;">
          <children>
-            <MenuButton fx:id="menuButton" mnemonicParsing="false" onAction="#desativa" prefHeight="29.0" prefWidth="33.0" style="-fx-background-image: url('ImageResources/MenuBtn.png');" styleClass=".menu-button" stylesheets="@css/index.css">
+            <MenuButton fx:id="menuButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" style="-fx-background-image: url('ImageResources/MenuBtn.png');" styleClass=".menu-button" stylesheets="@css/index.css">
               <items>
                 <MenuItem fx:id="graficos" mnemonicParsing="false" onAction="#pagina2" text="Gráficos" />
                 <MenuItem mnemonicParsing="false" text="cutuvelo" />
@@ -48,7 +48,7 @@
             </ImageView>
             <HBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="176.0">
                <children>
-                  <JFXButton fx:id="exitButton" buttonType="RAISED" onAction="#exit" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
+                  <JFXButton fx:id="exitButton" buttonType="RAISED" onAction="#exit" prefHeight="13.0" prefWidth="28.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
                </children>
             </HBox>
          </children>

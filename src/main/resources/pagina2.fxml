@@ -1,11 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina2Controller">
+<VBox alignment="TOP_CENTER" prefHeight="650.0" prefWidth="650.0" style="-fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina2Controller">
    <children>
-      <JFXButton fx:id="sairButton" buttonType="RAISED" layoutX="622.0" onAction="#sair" prefHeight="0.0" prefWidth="28.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
+      <HBox prefHeight="52.0" prefWidth="650.0" spacing="15.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <MenuButton fx:id="menuButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" style="-fx-background-image: url('ImageResources/MenuBtn.png');" styleClass=".menu-button" stylesheets="@css/index.css">
+               <items>
+                  <MenuItem fx:id="graficos" mnemonicParsing="false" text="Gráficos" />
+                  <MenuItem mnemonicParsing="false" text="cutuvelo" />
+               </items>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </MenuButton>
+            <Label prefHeight="35.0" prefWidth="226.0" text="Tech Rivers LTDA">
+               <font>
+                  <Font name="Yu Gothic Regular" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="33.0">
+               <image>
+                  <Image url="@ImageResources/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="-15.0" right="145.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="176.0">
+               <children>
+                  <JFXButton fx:id="sairButton" buttonType="RAISED" onAction="#sair" prefHeight="0.0" prefWidth="28.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label prefHeight="83.0" prefWidth="380.0" text="Rios de SP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic Medium" size="59.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="291.0" prefWidth="650.0">
+         <children>
+            <VBox prefHeight="268.0" prefWidth="85.0" />
+            <BarChart fx:id="chart" blendMode="SCREEN" prefHeight="210.0" prefWidth="429.0" style="-fx-background-color: transparent;" styleClass="grafico" stylesheets="@css/pagina2.css">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </HBox>
+      <BarChart blendMode="DARKEN">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+        </yAxis>
+      </BarChart>
    </children>
-</AnchorPane>
+</VBox>

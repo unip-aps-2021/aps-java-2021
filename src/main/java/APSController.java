@@ -38,31 +38,6 @@ public class APSController {
     public void initialize() {
     }
 
-//
-//    @FXML
-//    public void initialize() {
-//        new CategoryAxis().setLabel("Mike");
-//        new NumberAxis().setLabel("Ueee");
-//        series1.setName("Unip");
-//        addChart(series1, "Tio ete", 350);
-//        addChart(series1, "Pinheiros", 300);
-//        addChart(series1, "Tamanduatei", 250);
-//        addChart(series1, "Piracicaba", 150);
-//        addChart(series1, "Anhangabau", 100);
-//
-//        tabela.getData().addAll(series1);
-//    }
-
-//    @FXML
-//    private void botao1(ActionEvent event) {
-//        addChart(series1, "Samy", 400);
-//    }
-//
-//    @FXML
-//    private void botao2(ActionEvent event) {
-//        changeChartByIndex(series1, 0, 300);
-//    }
-
     public void pagina2() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("pagina2.fxml"));
         Stage stage = new Stage();
@@ -98,15 +73,4 @@ public class APSController {
     public void desativa() {
         vbox.setDisable(true);
     }
-
-
-//    private void changeChartByIndex(XYChart.Series series, int index, int valor){
-//        XYChart.Data data = (XYChart.Data) series.getData().get(index);
-//        data.setYValue(valor);
-//    }
-//
-//    private void addChart(XYChart.Series series, String nome, int valor){
-//        series.getData().add(new XYChart.Data(nome, valor));
-//    }
-
 }
