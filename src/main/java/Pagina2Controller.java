@@ -17,7 +17,7 @@ import java.io.IOException;
 
 
 public class Pagina2Controller {
-    private final XYChart.Series series1 = new XYChart.Series();
+    private XYChart.Series series1 = new XYChart.Series();
     @FXML private TabPane tabPanePag2;
     @FXML private Tab tabPag1;
     @FXML private APSController apsController;
@@ -58,7 +58,15 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba2(ActionEvent event) {
-        System.out.println("AAAAAAAAAAAAAAAAAAAA");
+        series1 = new XYChart.Series();
+        addChart(series1, "Aricanduva", 300);
+        addChart(series1, "Rio Grande", 250);
+        addChart(series1, "Jacaré-Pepira", 350);
+        addChart(series1, "Atibainha", 200);
+        addChart(series1, "Peixe", 200);
+
+        chart.getData().addAll(series1);
+        System.out.println("BLABLABLALBBLALBALBLALABALLAB");
     }
 
     private void changeChartByIndex(XYChart.Series series, int index, int valor) {

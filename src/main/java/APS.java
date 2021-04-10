@@ -55,7 +55,7 @@ public class APS extends Application {
 
         VBox vBox = new VBox(menuBar);
 
-        Scene scene = new Scene(root, 650, 650);
+        Scene scene = new Scene(root);
 
         stage.setScene(scene);
         stage.show();
