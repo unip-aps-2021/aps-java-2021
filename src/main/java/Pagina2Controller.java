@@ -1,21 +1,41 @@
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+
 
 public class Pagina2Controller {
     private final XYChart.Series series1 = new XYChart.Series();
+    @FXML private TabPane tabPanePag2;
+    @FXML private Tab tabPag1;
+    @FXML private APSController apsController;
 
     @FXML
-    private JFXButton sairButton;
-
+    private Button aba1;
+    @FXML
+    private Button aba2;
+    @FXML
+    private Button aba3;
+    @FXML
+    private Button aba4;
     @FXML
     private BarChart chart;
 
+//classes -> Rio(nome, longitude, descrição, etc)
+//Criar novo Rio, Testando OOP
+//Usuário de entrada
     @FXML
     public void initialize() {
         new CategoryAxis().setLabel("Mike");
@@ -30,20 +50,16 @@ public class Pagina2Controller {
         chart.getData().addAll(series1);
     }
 
-    public void sair(ActionEvent event) {
-        Stage stage = (Stage) sairButton.getScene().getWindow();
-        stage.close();
+
+    @FXML
+    private void setAba1(ActionEvent event) {
+        System.out.println("BLABLABLABLABLABLA");
     }
-//
-//    @FXML
-//    private void botao1(ActionEvent event) {
-//        addChart(series1, "Samy", 400);
-//    }
-//
-//    @FXML
-//    private void botao2(ActionEvent event) {
-//        changeChartByIndex(series1, 0, 300);
-//    }
+
+    @FXML
+    private void setAba2(ActionEvent event) {
+        System.out.println("AAAAAAAAAAAAAAAAAAAA");
+    }
 
     private void changeChartByIndex(XYChart.Series series, int index, int valor) {
         XYChart.Data data = (XYChart.Data) series.getData().get(index);

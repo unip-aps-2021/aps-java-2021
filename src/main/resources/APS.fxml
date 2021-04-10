@@ -1,101 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
-
-<VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
-   <children>
-      <HBox prefHeight="21.0" prefWidth="468.0" spacing="15.0" style="-fx-background-color: #FFFFFF;">
-         <children>
-            <MenuButton fx:id="menuButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" style="-fx-background-image: url('ImageResources/MenuBtn.png');" styleClass=".menu-button" stylesheets="@css/index.css">
-              <items>
-                <MenuItem fx:id="graficos" mnemonicParsing="false" onAction="#pagina2" text="Gráficos" />
-                <MenuItem mnemonicParsing="false" text="cutuvelo" />
-              </items>
-               <HBox.margin>
-                  <Insets top="10.0" />
-               </HBox.margin>
-            </MenuButton>
-            <Label prefHeight="35.0" prefWidth="226.0" text="Tech Rivers LTDA">
-               <font>
-                  <Font name="Yu Gothic Regular" size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets top="10.0" />
-               </HBox.margin>
-            </Label>
-            <ImageView fitHeight="32.0" fitWidth="33.0">
-               <image>
-                  <Image url="@ImageResources/logo.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="-15.0" right="145.0" top="10.0" />
-               </HBox.margin>
-            </ImageView>
-            <HBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="176.0">
-               <children>
-                  <JFXButton fx:id="exitButton" buttonType="RAISED" onAction="#exit" prefHeight="13.0" prefWidth="28.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
-               </children>
-            </HBox>
-         </children>
-         <padding>
-            <Insets bottom="10.0" left="10.0" />
-         </padding>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </HBox>
-      <Label fx:id="riosLabel" alignment="CENTER" prefHeight="66.0" prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
-         <font>
-            <Font name="SimSun" size="33.0" />
-         </font>
-         <effect>
-            <DropShadow>
-               <input>
-                  <Glow />
-               </input>
-            </DropShadow>
-         </effect>
-      </Label>
-      <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="350.0" prefWidth="650.0">
-         <children>
-            <Pane layoutX="46.0" layoutY="-5.0" prefHeight="461.0" prefWidth="563.0" style="-fx-background-color: #4967ab;">
-               <children>
-                  <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
-                     <children>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" wrappingWidth="428.7578125">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </TextFlow>
-                  <Button layoutX="187.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
-                  <Button layoutX="237.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
-                  <Button layoutX="345.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;" text=" " />
-                  <Button layoutX="293.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
-                  <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="182.0" layoutY="186.0">
-                     <image>
-                        <Image url="@ImageResources/logoazul.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-   </children>
-</VBox>
+  <TabPane fx:id="tabPane" prefHeight="650.0" prefWidth="650.0" stylesheets="@css/index.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
+      <tabs>
+          <Tab styleClass="tab-button" text="Página 1">
+              <content>
+<!--                  <fx:include fx:id="tab1" source="APS.fxml"/>-->
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);">
+                      <children>
+                          <Pane layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="650.0">
+                              <children>
+                                  <Pane layoutX="35.0" layoutY="21.0" prefHeight="494.0" prefWidth="574.0" style="-fx-background-color: #4967ab;">
+                                      <children>
+                                          <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
+                                              <children>
+                                                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" wrappingWidth="428.7578125">
+                                                      <font>
+                                                          <Font size="14.0" />
+                                                      </font>
+                                                  </Text>
+                                              </children>
+                                          </TextFlow>
+                                          <Button layoutX="187.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
+                                          <Button layoutX="237.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
+                                          <Button layoutX="345.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;" text=" " />
+                                          <Button layoutX="293.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
+                                          <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="182.0" layoutY="186.0">
+                                              <image>
+                                                  <Image url="@ImageResources/logoazul.png" />
+                                              </image>
+                                          </ImageView>
+                                      </children>
+                                  </Pane>
+                              </children>
+                          </Pane>
+                          <Label fx:id="riosLabel" alignment="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="66.0" prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
+                              <font>
+                                  <Font name="SimSun" size="33.0" />
+                              </font>
+                              <effect>
+                                  <DropShadow>
+                                      <input>
+                                          <Glow />
+                                      </input>
+                                  </DropShadow>
+                              </effect>
+                          </Label>
+                      </children>
+                  </AnchorPane>
+              </content>
+          </Tab>
+          <Tab styleClass="tab-button-2" text="Página 2">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);" />
+                  <fx:include fx:id="tab2" source="pagina2.fxml"/>
+              </content>
+          </Tab>
+      </tabs>
+  </TabPane>

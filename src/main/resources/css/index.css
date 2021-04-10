@@ -1,11 +1,11 @@
-.menu-button > .arrow-button {
-    -fx-padding: 0;
+.tab-pane .tab-header-area .tab-header-background {
+   -fx-background-color: #243e69;
 }
 
-.menu-button > .arrow-button > .arrow {
-    -fx-padding: 0;
+.tab-button {
+    -fx-background-color:  linear-gradient(to top, #59849c 0%, #3399ff 100%);
 }
 
-.text-area, .text-area .viewport, .text-area .content {
-    -fx-background-color: transparent ;
+.tab-button-2 {
+    -fx-background-color:  linear-gradient(to top, #59849c 0%, #3399ff 100%);
 }

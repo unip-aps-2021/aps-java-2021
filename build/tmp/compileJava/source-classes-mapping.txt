@@ -1,14 +1,10 @@
-TesteController.java
- TesteController
 Launcher.java
  Launcher
+TesteController.java
+ TesteController
 APS.java
  APS
- APS$1
- APS$2
 APSController.java
  APSController
- APSController$1
- APSController$2
 Pagina2Controller.java
  Pagina2Controller

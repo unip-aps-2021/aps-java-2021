@@ -9,6 +9,18 @@
     -fx-background-color: transparent;
 }
 
-.chart-bar {
-    -fx-bar-fill: #00fffb;
+.default-color0.chart-bar{
+    -fx-bar-fill: #0fdbc4;
+}
+
+.tab-pane-pag2 .tab-header-area .tab-header-background {
+   -fx-background-color: #243e69;
+}
+
+.tab-button1-pag2 {
+    -fx-background-color:  linear-gradient(to top, #59849c 0%, #3399ff 100%);
+}
+
+.tab-button2-pag2 {
+    -fx-background-color:  linear-gradient(to top, #59849c 0%, #3399ff 100%);
 }
