@@ -17,10 +17,17 @@ import java.io.IOException;
 
 
 public class Pagina2Controller {
-    private XYChart.Series series1 = new XYChart.Series();
-    @FXML private TabPane tabPanePag2;
-    @FXML private Tab tabPag1;
-    @FXML private APSController apsController;
+    private final XYChart.Series series1 = new XYChart.Series();
+    private final XYChart.Series series2 = new XYChart.Series();
+
+    @FXML
+    private TabPane tabPanePag2;
+    @FXML
+    private Tab tabPag1;
+    @FXML
+    private APSController apsController;
+    @FXML
+    private NumberAxis yAxis;
 
     @FXML
     private Button aba1;
@@ -33,11 +40,12 @@ public class Pagina2Controller {
     @FXML
     private BarChart chart;
 
-//classes -> Rio(nome, longitude, descrição, etc)
+    //classes -> Rio(nome, longitude, descrição, etc)
 //Criar novo Rio, Testando OOP
 //Usuário de entrada
     @FXML
     public void initialize() {
+        yAxis.setAnimated(false);
         new CategoryAxis().setLabel("Mike");
         new NumberAxis().setLabel("Ueee");
         series1.setName("Unip");
@@ -46,32 +54,45 @@ public class Pagina2Controller {
         addChart(series1, "Tamanduatei", 250);
         addChart(series1, "Piracicaba", 150);
         addChart(series1, "Anhangabau", 100);
-
         chart.getData().addAll(series1);
     }
 
 
     @FXML
     private void setAba1(ActionEvent event) {
-        System.out.println("BLABLABLABLABLABLA");
+        try {
+            if (chart.getData() != null) {
+                chart.getData().removeAll(series2);
+                chart.getData().addAll(series1);
+            }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void setAba2(ActionEvent event) {
-        series1 = new XYChart.Series();
-        addChart(series1, "Aricanduva", 300);
-        addChart(series1, "Rio Grande", 250);
-        addChart(series1, "Jacaré-Pepira", 350);
-        addChart(series1, "Atibainha", 200);
-        addChart(series1, "Peixe", 200);
-
-        chart.getData().addAll(series1);
-        System.out.println("BLABLABLALBBLALBALBLALABALLAB");
+        addChart(series2, "Aricanduva", 300);
+        addChart(series2, "Kurupira", 350);
+        addChart(series2, "Jacare", 250);
+        addChart(series2, "Peixe", 800);
+        addChart(series2, "Gato", 100);
+        try {
+            chart.getData().removeAll(series1);
+            chart.getData().addAll(series2);
+        } catch (IllegalArgumentException | NullPointerException e) {
+            e.addSuppressed(e);
+        }
     }
 
-    private void changeChartByIndex(XYChart.Series series, int index, int valor) {
+    private void changeChartY(XYChart.Series series, int index, int valor) {
         XYChart.Data data = (XYChart.Data) series.getData().get(index);
         data.setYValue(valor);
+    }
+
+    private void changeChartX(XYChart.Series series, int index, String valor) {
+        XYChart.Data data = (XYChart.Data) series.getData().get(index);
+        data.setXValue(valor);
     }
 
     private void addChart(XYChart.Series series, String nome, int valor) {

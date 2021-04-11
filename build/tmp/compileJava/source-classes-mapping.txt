@@ -1,12 +1,12 @@
-Pagina2Controller.java
- Pagina2Controller
-TesteController.java
- TesteController
-Pagina3Controller.java
- Pagina3Controller
 APSController.java
  APSController
 Launcher.java
  Launcher
+Pagina3Controller.java
+ Pagina3Controller
 APS.java
  APS
+TesteController.java
+ TesteController
+Pagina2Controller.java
+ Pagina2Controller

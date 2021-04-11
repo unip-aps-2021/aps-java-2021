@@ -10,6 +10,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -22,6 +23,14 @@ public class APS extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("APS.fxml"));
         stage.setTitle("Tech Rivers LTDA");
         stage.getIcons().add(new Image("/ImageResources/logo.png"));
+
+//        double x = Screen.getScreens().get(0).getVisualBounds().getWidth();
+//        double y = Screen.getScreens().get(0).getVisualBounds().getHeight();
+//        double perWidth = x * 0.5;
+//        double perHeight = y * 0.9;
+//        System.out.println("X: " + perWidth);
+//        System.out.println("Y: " + perHeight);
+
 //        stage.initStyle(StageStyle.UNDECORATED);
 //
 //        root.setOnMousePressed(new EventHandler<MouseEvent>() {
@@ -55,10 +64,12 @@ public class APS extends Application {
 
         VBox vBox = new VBox(menuBar);
 
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 700, 650);
 
         stage.setScene(scene);
         stage.show();
+
+
     }
 
     /**

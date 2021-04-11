@@ -13,14 +13,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" styleClass="vbox" stylesheets="@css/pagina2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina2Controller">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" styleClass="vbox" stylesheets="@css/pagina2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina2Controller">
    <children>
       <Label prefHeight="83.0" prefWidth="296.0" text="Rios de SP" textFill="WHITE">
          <font>
             <Font name="Yu Gothic Medium" size="59.0" />
          </font>
       </Label>
-      <Pane prefHeight="331.0" prefWidth="650.0">
+      <Pane prefHeight="364.0" prefWidth="704.0">
          <children>
             <VBox alignment="TOP_RIGHT" layoutX="53.0" prefHeight="276.0" prefWidth="76.0" spacing="3.0">
                <children>
@@ -46,14 +46,14 @@
                   </Button>
                </children>
             </VBox>
-            <Pane layoutX="120.0" prefHeight="222.0" prefWidth="415.0" styleClass="pane-grafico">
+            <Pane layoutX="120.0" prefHeight="298.0" prefWidth="510.0" styleClass="pane-grafico">
                <children>
-                  <BarChart fx:id="chart" blendMode="SCREEN" layoutX="27.0" layoutY="6.0" prefHeight="213.0" prefWidth="336.0" styleClass="grafico" stylesheets="@css/pagina2.css">
+                  <BarChart fx:id="chart" blendMode="SCREEN" layoutX="-13.0" layoutY="-9.0" prefHeight="310.0" prefWidth="531.0" styleClass="grafico" stylesheets="@css/pagina2.css">
                      <xAxis>
                         <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
                      </xAxis>
                      <yAxis>
-                        <NumberAxis prefHeight="247.0" prefWidth="5.0" side="LEFT" tickLabelFill="WHITE" />
+                        <NumberAxis fx:id="yAxis" prefHeight="269.0" prefWidth="24.0" side="LEFT" tickLabelFill="WHITE" />
                      </yAxis>
                   </BarChart>
                </children>
@@ -65,21 +65,18 @@
       </Pane>
       <Pane prefHeight="421.0" prefWidth="650.0">
          <children>
-            <ImageView fitHeight="276.0" fitWidth="342.0" layoutX="154.0" layoutY="22.0">
+            <ImageView fitHeight="197.0" fitWidth="466.0" layoutX="129.0" layoutY="78.0">
                <image>
                   <Image url="@ImageResources/RioExemplo.jpg" />
                </image>
             </ImageView>
-            <Pane layoutX="160.0" layoutY="29.0" opacity="0.55" prefHeight="261.0" prefWidth="330.0" styleClass="pane-imagem" />
-            <JFXTextArea editable="false" layoutX="160.0" layoutY="38.0" prefHeight="251.0" prefWidth="377.0" styleClass="jfx-text-area" text="As suas nascentes ficam a 1.027 metros acima do nível, no mar no Parque Nascentes do Rio Tietê, uma área de Mata Atlântica próxima à cidade de SãoPaulo. Elas brotam em três diferentes pontos e seguem o mesmo caminho, por onde recebem água de outros córregos e se unem num único rio.O rio começa a morrer no município de Mogi das Cruzes, onde recebe cerca de 60 toneladas de esgoto por dia. São dejetos sem nenhum tipo de tratamento,que também tornam as suas águas mais escuras.">
+            <Pane layoutX="136.0" layoutY="87.0" opacity="0.55" prefHeight="186.0" prefWidth="452.0" styleClass="pane-imagem" />
+            <JFXTextArea editable="false" layoutX="146.0" layoutY="83.0" prefHeight="186.0" prefWidth="442.0" styleClass="jfx-text-area" text="As suas nascentes ficam a 1.027 metros acima do nível, no mar no Parque Nascentes do Rio Tietê, uma área de Mata Atlântica próxima à cidade de SãoPaulo. Elas brotam em três diferentes pontos e seguem o mesmo caminho, por onde recebem água de outros córregos e se unem num único rio.O rio começa a morrer no município de Mogi das Cruzes, onde recebe cerca de 60 toneladas de esgoto por dia. São dejetos sem nenhum tipo de tratamento,que também tornam as suas águas mais escuras.">
                <font>
                   <Font size="15.0" />
                </font>
-               <padding>
-                  <Insets right="50.0" />
-               </padding>
             </JFXTextArea>
-            <Label layoutX="212.0" layoutY="-39.0" prefHeight="71.0" prefWidth="190.0" text="Rio Tio Ete" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="255.0" layoutY="28.0" prefHeight="71.0" prefWidth="190.0" text="Rio Tio Ete" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="39.0" />
                </font>
