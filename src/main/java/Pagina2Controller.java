@@ -72,11 +72,16 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba2(ActionEvent event) {
-        addChart(series2, "Aricanduva", 300);
-        addChart(series2, "Kurupira", 350);
-        addChart(series2, "Jacare", 250);
-        addChart(series2, "Peixe", 800);
-        addChart(series2, "Gato", 100);
+        Rio aricanduva = new Rio("Aricanduva", 1000, 500, "Horrível");
+        Rio kurupira = new Rio("Kurupira", 4000, 2800, "Pior que a anterior");
+        Rio jacare = new Rio("Jacare", 5000, 3600, "Ruim pra krl");
+        Rio peixe = new Rio("Peixe", 3000, 2300, "Horrível");
+        Rio gato = new Rio("Gato", 7000, 4000, "Um lixo");
+        addChart(series2, aricanduva.getNome(), (int) aricanduva.getPorcentagemPoluicao());
+        addChart(series2, kurupira.getNome(), (int) kurupira.getPorcentagemPoluicao());
+        addChart(series2, jacare.getNome(), (int) jacare.getPorcentagemPoluicao());
+        addChart(series2, peixe.getNome(), (int) peixe.getPorcentagemPoluicao());
+        addChart(series2, gato.getNome(), (int) gato.getPorcentagemPoluicao());
         try {
             chart.getData().removeAll(series1);
             chart.getData().addAll(series2);
