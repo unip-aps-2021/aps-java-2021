@@ -15,6 +15,7 @@ public class Rio {
     public double getPorcentagemPoluicao(){
         return (longitudePoluicao * 100) / longitude;
     }
+
     public String getNome() {
         return nome;
     }

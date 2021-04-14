@@ -22,7 +22,7 @@
                <children>
                   <Pane layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="650.0">
                      <children>
-                        <Pane layoutX="35.0" layoutY="21.0" prefHeight="494.0" prefWidth="574.0" style="-fx-background-color: #4967ab;">
+                        <Pane layoutX="35.0" layoutY="21.0" prefHeight="494.0" prefWidth="618.0" styleClass="quadradawn">
                            <children>
                               <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
                                  <children>
@@ -33,11 +33,11 @@
                                     </Text>
                                  </children>
                               </TextFlow>
-                              <Button layoutX="187.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
-                              <Button layoutX="237.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
-                              <Button layoutX="345.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;" text=" " />
-                              <Button layoutX="293.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
-                              <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="182.0" layoutY="186.0">
+                              <Button layoutX="209.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
+                              <Button layoutX="259.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
+                              <Button layoutX="362.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;" text=" " />
+                              <Button layoutX="309.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
+                              <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="209.0" layoutY="190.0">
                                  <image>
                                     <Image url="@ImageResources/logoazul.png" />
                                  </image>

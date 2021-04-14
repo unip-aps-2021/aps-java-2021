@@ -40,7 +40,7 @@ public class Pagina2Controller {
     @FXML
     private BarChart chart;
 
-    //classes -> Rio(nome, longitude, descrição, etc)
+//classes -> Rio(nome, longitude, descrição, etc)
 //Criar novo Rio, Testando OOP
 //Usuário de entrada
     @FXML

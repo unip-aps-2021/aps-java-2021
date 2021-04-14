@@ -10,9 +10,9 @@
 }
 
 .chart-bar{
-    -fx-background-color: linear-gradient(to top, #00f4ff, #1dbcda, #3886a9, #395571, #272b39);
+    -fx-background-color: #64aacf;
 }
-//#0fdbc4
+
 .tab-pane-pag2 .tab-header-area .tab-header-background {
    -fx-background-color: #243e69;
 }
@@ -26,16 +26,16 @@
 }
 
 .vbox {
-     -fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);
+     -fx-background-color: #1287c6;
 }
 
 .pane-grafico {
-    -fx-background-color:  #7a63b8;
+    -fx-background-color: #063047;
 }
 
 .chart-button{
     -fx-background-radius:  250;
-    -fx-background-color:  #4a4270;
+    -fx-background-color:  #063047;
 }
 
 .pane-imagem {

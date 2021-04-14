@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
@@ -66,22 +65,11 @@
       </Pane>
       <Pane prefHeight="421.0" prefWidth="650.0">
          <children>
-            <ImageView fitHeight="197.0" fitWidth="466.0" layoutX="129.0" layoutY="78.0">
+            <ImageView fitHeight="230.0" fitWidth="700.0" layoutY="59.0">
                <image>
-                  <Image url="@ImageResources/RioExemplo.jpg" />
+                  <Image url="@ImageResources/fototeste.jpg" />
                </image>
             </ImageView>
-            <Pane layoutX="136.0" layoutY="87.0" opacity="0.55" prefHeight="186.0" prefWidth="452.0" styleClass="pane-imagem" />
-            <JFXTextArea editable="false" layoutX="146.0" layoutY="83.0" prefHeight="186.0" prefWidth="442.0" styleClass="jfx-text-area" text="As suas nascentes ficam a 1.027 metros acima do nível, no mar no Parque Nascentes do Rio Tietê, uma área de Mata Atlântica próxima à cidade de SãoPaulo. Elas brotam em três diferentes pontos e seguem o mesmo caminho, por onde recebem água de outros córregos e se unem num único rio.O rio começa a morrer no município de Mogi das Cruzes, onde recebe cerca de 60 toneladas de esgoto por dia. São dejetos sem nenhum tipo de tratamento,que também tornam as suas águas mais escuras.">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXTextArea>
-            <Label layoutX="255.0" layoutY="28.0" prefHeight="71.0" prefWidth="190.0" text="Rio Tio Ete" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font size="39.0" />
-               </font>
-            </Label>
          </children>
          <opaqueInsets>
             <Insets />
