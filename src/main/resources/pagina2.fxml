@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
@@ -64,16 +65,41 @@
          </children>
       </Pane>
       <Pane prefHeight="421.0" prefWidth="650.0">
-         <children>
-            <ImageView fitHeight="230.0" fitWidth="700.0" layoutY="59.0">
-               <image>
-                  <Image url="@ImageResources/fototeste.jpg" />
-               </image>
-            </ImageView>
-         </children>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
+         <children>
+            <Pane layoutX="17.0" layoutY="70.0" prefHeight="210.0" prefWidth="222.0" styleClass="pane-curiosidade">
+               <children>
+                  <ImageView layoutX="79.0">
+                     <image>
+                        <Image url="@ImageResources/souummapasouummapa.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="textoMapa" layoutX="9.0" layoutY="64.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
+               </children>
+            </Pane>
+            <Pane layoutX="239.0" layoutY="70.0" prefHeight="210.0" prefWidth="222.0" styleClass="pane-curiosidade">
+               <children>
+                  <ImageView layoutX="79.0" layoutY="5.0">
+                     <image>
+                        <Image url="@ImageResources/esgoto.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="textoEsgoto" layoutX="9.0" layoutY="69.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
+               </children>
+            </Pane>
+            <Pane layoutX="461.0" layoutY="70.0" prefHeight="210.0" prefWidth="222.0" styleClass="pane-curiosidade">
+               <children>
+                  <ImageView layoutX="79.0" layoutY="2.0">
+                     <image>
+                        <Image url="@ImageResources/cabeludo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="textoCabeludo" layoutY="57.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
+               </children>
+            </Pane>
+         </children>
       </Pane>
    </children>
 </VBox>

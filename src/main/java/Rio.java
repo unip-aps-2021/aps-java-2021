@@ -2,7 +2,9 @@ public class Rio {
     private String nome;
     private double longitude;
     private double longitudePoluicao;
-    private String descricao;
+    private String primeiraCuriosidade;
+    private String segundaCuriosidade;
+    private String terceiraCuriosidade;
     private String qualidadeDaAgua;
 
     public Rio(String nome, double longitude, double longitudePoluicao, String qualidadeDaAgua) {
@@ -10,6 +12,22 @@ public class Rio {
         this.longitude = longitude;
         this.longitudePoluicao = longitudePoluicao;
         this.qualidadeDaAgua = qualidadeDaAgua;
+    }
+
+    public String getSegundaCuriosidade() {
+        return segundaCuriosidade;
+    }
+
+    public void setSegundaCuriosidade(String segundaCuriosidade) {
+        this.segundaCuriosidade = segundaCuriosidade;
+    }
+
+    public String getTerceiraCuriosidade() {
+        return terceiraCuriosidade;
+    }
+
+    public void setTerceiraCuriosidade(String terceiraCuriosidade) {
+        this.terceiraCuriosidade = terceiraCuriosidade;
     }
 
     public double getPorcentagemPoluicao(){
@@ -32,12 +50,12 @@ public class Rio {
         this.longitude = longitude;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getPrimeiraCuriosidade() {
+        return primeiraCuriosidade;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setPrimeiraCuriosidade(String primeiraCuriosidade) {
+        this.primeiraCuriosidade = primeiraCuriosidade;
     }
 
     public String getQualidadeDaAgua() {
@@ -62,7 +80,7 @@ public class Rio {
                 "nome='" + nome + '\'' +
                 ", longitude=" + longitude +
                 ", longitudePoluicao=" + longitudePoluicao +
-                ", descricao='" + descricao + '\'' +
+                ", descricao='" + primeiraCuriosidade + '\'' +
                 ", qualidadeDaAgua='" + qualidadeDaAgua + '\'' +
                 '}';
     }

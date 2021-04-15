@@ -42,6 +42,12 @@
     -fx-background-color: #ffffff;
 }
 
+.pane-curiosidade {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: #666666;
+}
+
 .jfx-text-area .centeredTextArea .scroll-pane .content .text {
    -fx-text-alignment: center;
 }
