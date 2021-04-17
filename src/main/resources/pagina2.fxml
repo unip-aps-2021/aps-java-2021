@@ -76,7 +76,7 @@
                         <Image url="@ImageResources/souummapasouummapa.png" />
                      </image>
                   </ImageView>
-                  <JFXTextArea fx:id="textoMapa" layoutX="9.0" layoutY="64.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
+                  <JFXTextArea fx:id="textoMapa" editable="false" layoutX="9.0" layoutY="64.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
                </children>
             </Pane>
             <Pane layoutX="239.0" layoutY="70.0" prefHeight="210.0" prefWidth="222.0" styleClass="pane-curiosidade">
@@ -86,7 +86,7 @@
                         <Image url="@ImageResources/esgoto.png" />
                      </image>
                   </ImageView>
-                  <JFXTextArea fx:id="textoEsgoto" layoutX="9.0" layoutY="69.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
+                  <JFXTextArea fx:id="textoEsgoto" editable="false" layoutX="9.0" layoutY="69.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
                </children>
             </Pane>
             <Pane layoutX="461.0" layoutY="70.0" prefHeight="210.0" prefWidth="222.0" styleClass="pane-curiosidade">
@@ -96,7 +96,7 @@
                         <Image url="@ImageResources/cabeludo.png" />
                      </image>
                   </ImageView>
-                  <JFXTextArea fx:id="textoCabeludo" layoutY="57.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
+                  <JFXTextArea fx:id="textoCabeludo" editable="false" layoutX="9.0" layoutY="71.0" prefHeight="139.0" prefWidth="204.0" unFocusColor="#ffffff00" />
                </children>
             </Pane>
          </children>
