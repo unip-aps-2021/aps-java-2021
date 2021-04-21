@@ -21,7 +21,6 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 
 public class APSController {
-    private final XYChart.Series series1 = new XYChart.Series();
     @FXML private Label riosLabel;
     @FXML private MenuButton menuButton;
     @FXML private VBox vbox;

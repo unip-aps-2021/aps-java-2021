@@ -1,0 +1,73 @@
+public enum InstanciasRios {
+    TIETE(new Rio("Tietê", 1000, 500, QualidadeAgua.MUITO_POLUIDA,
+            "O Rio Tietê possuí 1.150km de extensão.",
+            "1.100km de sua extensão é poluída e tóxica para os seres vivos.",
+            "Em Mogi das Cruzes ele recebe cerca de 60 toneladas de esgoto por dia.")),
+    PINHEIROS(new Rio("Pinheiros", 4000, 2800, QualidadeAgua.POLUIDA,
+            "O Rio Pinheiros possuí 25km de extensão.",
+            "20km de sua extensão é poluída e tóxica para os seres vivos.",
+            "O Rio Pinheiros nasce do encontro do Rio Guarapiranga com o Rio Grande.")),
+    TAMANDUATEI(new Rio("Tamanduatei", 5000, 3600, QualidadeAgua.EXTREMAMENTE_POLUIDA,
+            "O Rio Tamanduatei possuí 35km de extensão.",
+            "28km de sua extensão é poluída e tóxica para os seres vivos.",
+            "Antigamente o rio era usado para lavagem de roupas, banho e outras atividades.")),
+    PIRACICABA(new Rio("Piracicaba", 3000, 2300, QualidadeAgua.EXTREMAMENTE_POLUIDA,
+            "O Rio Piracicaba possuí 115km de extensão.",
+            "105km de sua extensão é poluída e tóxica para os seres vivos.",
+            "Suas Quedas d'água bloqueiam a migração dos peixes.")),
+    ANHANGABAU(new Rio("Anhangabau", 7000, 4000, QualidadeAgua.POLUIDA,
+            "O Rio Anhangabaú possuí 137km de extensão.",
+            "127km de sua extensão é poluída e tóxica para os seres vivos.",
+            "A atual Praça da Bandeira, era, tradicionalmente, um grande charco.")),
+    PARAIBADOSUL(new Rio("Paraíba do Sul", 4500, 3600, QualidadeAgua.MUITO_POLUIDA,
+            "O Rio Paraíba do Sul possuí 1.137km de extensão.",
+            "1.100km de extensão é poluída e tóxica para os seres vivos.",
+            "É o rio mais importante do estado do Rio de Janeiro")),
+    ARICANDUVA(new Rio("Aricanduva", 28, 20, QualidadeAgua.EXTREMAMENTE_POLUIDA,
+            "O Rio Aricanduva tem 28km de extensão.",
+            "23km da sua extensão é poluida e toxica para os seres vivos.",
+            "Esse rio nasce poluído, pois uma de suas nascentes localiza-se no aterro sanitario Sao Joao")),
+    KURUPIRA(new Rio("Kurupira", 45, 35, QualidadeAgua.MUITO_POLUIDA,
+            "O Rio Kurupira tem 45km de extensão.",
+            "40km da sua extensão é poluida e toxica para os seres vivos.",
+            "A agua corre para um sentido diferente.")),
+    JACARE(new Rio("Jacare", 60, 35, QualidadeAgua.EXTREMAMENTE_POLUIDA,
+            "O Rio Jacare tem 60km de extensão.",
+            "56km da sua extensão é poluida e toxica para os seres vivos.",
+            "No rio Jacare, os jacares que vivem lá adoecem com o lixo.")),
+    PEIXE(new Rio("Peixe", 90, 45, QualidadeAgua.POLUIDA,
+            "O Rio Peixe tem 90km de extensão.",
+            "Metade da sua extensão é poluida e toxica para os seres vivos.",
+            "É o rio de São Paulo com maior variedade na fauna marinha")),
+    GATO(new Rio("Gato", 50, 37, QualidadeAgua.POLUIDA,
+            "O Rio Gato tem 50km de extensão.",
+            "45km de sua extensão é poluida e toxica para os seres vivos.",
+            "Esse rio é mais afetado pelas chuvas, que levam mais poluição às suas águas.")),
+    MYU(new Rio("Myu", 120, 95, QualidadeAgua.MUITO_BOA,
+            "O Rio Myu tem 120km de extensão.",
+            "95km da sua extensão é poluida e toxica para os seres vivos",
+            "O Rio myu é nomeado por conta dos imigrantes asiáticos que viviam nas suas redondezas")),
+    PIRAPATA(new Rio("Pirapata", 500, 100, QualidadeAgua.BOA)),
+    CAMBOIO(new Rio("Camboio", 350, 50, QualidadeAgua.BOA)),
+    LEOPARDOCARURU(new Rio("Leopardo Caruru", 600, 150, QualidadeAgua.BOA)),
+    BEAUTY(new Rio("Beauty", 800, 120, QualidadeAgua.BOA)),
+    PATACAMELO(new Rio("Patacamelo", 100, 40, QualidadeAgua.BOA)),
+    PEDRINHAS(new Rio("Pedrinhas", 230, 60, QualidadeAgua.BOA)),
+    PINAPORA(new Rio("Pinapora", 200, 20, QualidadeAgua.MUITO_BOA)),
+    FERROJA(new Rio("Ferroja", 500, 100, QualidadeAgua.BOA)),
+    AMAGUA(new Rio("Amaguá", 250, 60, QualidadeAgua.BOA)),
+    CANTOS(new Rio("Cantos", 600, 100, QualidadeAgua.BOA)),
+    MARTELO(new Rio("Martelo", 100, 30, QualidadeAgua.BOA)),
+    DELTA(new Rio("Delta", 75, 10, QualidadeAgua.BOA)),
+    ;
+
+    private Rio rio;
+
+    InstanciasRios(Rio rio) {
+        this.rio = rio;
+    }
+
+    public Rio get() {
+        return rio;
+    }
+}

@@ -5,9 +5,28 @@ public class Rio {
     private String primeiraCuriosidade;
     private String segundaCuriosidade;
     private String terceiraCuriosidade;
-    private String qualidadeDaAgua;
+    private QualidadeAgua qualidadeDaAgua;
 
-    public Rio(String nome, double longitude, double longitudePoluicao, String qualidadeDaAgua) {
+    public Rio(String nome,
+               double longitude,
+               double longitudePoluicao,
+               QualidadeAgua qualidadeDaAgua,
+               String primeiraCuriosidade,
+               String segundaCuriosidade,
+               String terceiraCuriosidade) {
+        this.nome = nome;
+        this.longitude = longitude;
+        this.longitudePoluicao = longitudePoluicao;
+        this.qualidadeDaAgua = qualidadeDaAgua;
+        this.primeiraCuriosidade = primeiraCuriosidade;
+        this.segundaCuriosidade = segundaCuriosidade;
+        this.terceiraCuriosidade = terceiraCuriosidade;
+    }
+
+    public Rio(String nome,
+               double longitude,
+               double longitudePoluicao,
+               QualidadeAgua qualidadeDaAgua) {
         this.nome = nome;
         this.longitude = longitude;
         this.longitudePoluicao = longitudePoluicao;
@@ -18,16 +37,8 @@ public class Rio {
         return segundaCuriosidade;
     }
 
-    public void setSegundaCuriosidade(String segundaCuriosidade) {
-        this.segundaCuriosidade = segundaCuriosidade;
-    }
-
     public String getTerceiraCuriosidade() {
         return terceiraCuriosidade;
-    }
-
-    public void setTerceiraCuriosidade(String terceiraCuriosidade) {
-        this.terceiraCuriosidade = terceiraCuriosidade;
     }
 
     public double getPorcentagemPoluicao(){
@@ -38,40 +49,20 @@ public class Rio {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public double getLongitude() {
         return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
     }
 
     public String getPrimeiraCuriosidade() {
         return primeiraCuriosidade;
     }
 
-    public void setPrimeiraCuriosidade(String primeiraCuriosidade) {
-        this.primeiraCuriosidade = primeiraCuriosidade;
-    }
-
-    public String getQualidadeDaAgua() {
+    public QualidadeAgua getQualidadeDaAgua() {
         return qualidadeDaAgua;
-    }
-
-    public void setQualidadeDaAgua(String qualidadeDaAgua) {
-        this.qualidadeDaAgua = qualidadeDaAgua;
     }
 
     public double getLongitudePoluicao() {
         return longitudePoluicao;
-    }
-
-    public void setLongitudePoluicao(double longitudePoluicao) {
-        this.longitudePoluicao = longitudePoluicao;
     }
 
     @Override

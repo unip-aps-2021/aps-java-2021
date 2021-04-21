@@ -1,6 +1,7 @@
 plugins {
     id 'application'
     id "org.openjfx.javafxplugin" version "0.0.9"
+    id "org.sonarqube" version "3.1.1"
 }
 
 group 'org.example'
@@ -22,7 +23,14 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.11'
     implementation 'com.jfoenix:jfoenix:9.0.10'
     runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:win"
+}
 
+sonarqube {
+    properties {
+        property "sonar.projectKey", "unip-aps-2021_caixa-do-flavio-3"
+        property "sonar.organization", "unip-aps-2021"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
 
 jar {
