@@ -6,9 +6,11 @@ import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -30,6 +32,18 @@ public class Pagina2Controller {
     private Rio peixe = new Rio("Peixe", 90, 45, "Horrível");
     private Rio gato = new Rio("Gato", 50, 37, "Um lixo");
     private Rio myu = new Rio("Myu", 120, 95, "Fedido");
+    private Rio pirapata = new Rio("Pirapata", 500, 100, "Boa");
+    private Rio camboio = new Rio("Camboio", 350, 50, "Boa");
+    private Rio leopardocaruru = new Rio("Leopardo Caruru", 600, 150, "Boa");
+    private Rio beauty = new Rio("Beauty", 800, 120, "Boa");
+    private Rio patacamelo = new Rio("Patacamelo", 100, 40, "Boa");
+    private Rio pedrinhas = new Rio("Pedrinhas", 230, 60, "Boa");
+    private Rio pinapora = new Rio("Pinapora", 200, 20, "Horrível");
+    private Rio Ferroja = new Rio("Ferroja", 500, 100, "Horrível");
+    private Rio Amagua = new Rio("Amaguá", 250, 60, "Horrível");
+    private Rio cantos = new Rio("Cantos", 600, 100, "Horrível");
+    private Rio martelo = new Rio("Martelo", 100, 30, "Horrível");
+    private Rio delta = new Rio("Delta", 75, 10, "Horrível");
 
     @FXML
     private TabPane tabPanePag2;
@@ -57,12 +71,15 @@ public class Pagina2Controller {
     private JFXTextArea textoEsgoto;
     @FXML
     private JFXTextArea textoCabeludo;
+    @FXML
+    private Label labelGrafico;
 
-    //classes -> Rio(nome, longitude, descrição, etc)
+//classes -> Rio(nome, longitude, descrição, etc)
 //Criar novo Rio, Testando OOP
 //Usuário de entrada
     @FXML
     public void initialize() {
+        labelGrafico.setText(new String("Mais poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
         yAxis.setAnimated(false);
         new CategoryAxis().setLabel("Mike");
         new NumberAxis().setLabel("Ueee");
@@ -92,6 +109,7 @@ public class Pagina2Controller {
         addChart(series1, "Anhangabau", (int) anhagabau.getPorcentagemPoluicao());
         addChart(series1, "Guarapiranga", (int) paraibadosul.getPorcentagemPoluicao());
         rotate(tiete, pinheiros, tamanduatei, piracicaba, anhagabau, paraibadosul);
+        chart.setLegendVisible(false);
         chart.getData().addAll(series1);
     }
 
@@ -112,6 +130,7 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba2(ActionEvent event) {
+        labelGrafico.setText(new String("Mais poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
         aricanduva.setPrimeiraCuriosidade("O Rio Aricanduva tem 28km de extensão.");
         aricanduva.setSegundaCuriosidade("23km da sua extensão é poluida e toxica para os seres vivos.");
         aricanduva.setTerceiraCuriosidade("Esse rio nasce poluído, pois uma de suas nascentes localiza-se no aterro sanitario Sao Joao");
@@ -150,6 +169,14 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba3(ActionEvent event){
+        labelGrafico.setText(new String("Menos poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
+        addChart(series3, "Pirapata", (int) pirapata.getPorcentagemPoluicao());
+        addChart(series3, "Camboio", (int) camboio.getPorcentagemPoluicao());
+        addChart(series3, "Leopardo Caruru", (int) leopardocaruru.getPorcentagemPoluicao());
+        addChart(series3, "Beauty", (int) beauty.getPorcentagemPoluicao());
+        addChart(series3, "Patacamelo", (int) patacamelo.getPorcentagemPoluicao());
+        addChart(series3, "Pedrinhas", (int) pedrinhas.getPorcentagemPoluicao());
+
         try {
             chart.getData().removeAll(series1);
             chart.getData().removeAll(series2);
@@ -162,6 +189,13 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba4(ActionEvent event){
+        labelGrafico.setText(new String("Menos poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
+        addChart(series4, "Pinapora", (int) pinapora.getPorcentagemPoluicao());
+        addChart(series4, "Ferroja", (int) Ferroja.getPorcentagemPoluicao());
+        addChart(series4, "Amaguá", (int) Amagua.getPorcentagemPoluicao());
+        addChart(series4, "Cantos", (int) cantos.getPorcentagemPoluicao());
+        addChart(series4, "Martelo", (int) martelo.getPorcentagemPoluicao());
+        addChart(series4, "Delta", (int) delta.getPorcentagemPoluicao());
         try {
             chart.getData().removeAll(series1);
             chart.getData().removeAll(series3);
