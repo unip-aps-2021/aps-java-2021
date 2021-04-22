@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
 
-<AnchorPane prefHeight="650.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@css/pagina3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina3Controller">
+<AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/pagina3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina3Controller">
+   <children>
+      <JFXButton fx:id="primeiroBotaoMudar" layoutX="-6.0" layoutY="250.0" onAction="#setPrimeiroBotaoMudar" opacity="0.78" prefHeight="151.0" prefWidth="53.0" styleClass="botao-mudar" text="&lt;" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="segundoBotaoMudar" layoutX="647.0" layoutY="250.0" onAction="#setSegundoBotaoMudar" opacity="0.78" prefHeight="151.0" prefWidth="53.0" styleClass="botao-mudar" text="&gt;" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <TextFlow layoutX="120.0" layoutY="155.0" prefHeight="246.0" prefWidth="461.0" textAlignment="JUSTIFY">
+         <children>
+            <Text fx:id="textoTextFlow" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." textAlignment="RIGHT" wrappingWidth="545.1416015625">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="114.0" layoutY="14.0" prefHeight="127.0" prefWidth="489.0">
+         <children>
+            <Text fx:id="textoHeader" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Principais consequências da poluição ---&gt; TEMA (terrestre, aérea, etc)" wrappingWidth="574.0185546875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+   </children>
 </AnchorPane>

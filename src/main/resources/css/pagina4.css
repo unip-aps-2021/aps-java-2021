@@ -2,6 +2,6 @@
     -fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);
 }
 
-.botao-mudar {
-    -fx-background-color: #063047;
+.text-area{
+    -fx-text-fill: white;
 }
