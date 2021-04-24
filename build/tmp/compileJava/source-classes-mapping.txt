@@ -6,18 +6,18 @@ Launcher.java
  Launcher
 Pagina4Controller.java
  Pagina4Controller
+QualidadeAgua.java
+ QualidadeAgua
 Pagina3Controller.java
  Pagina3Controller
 APS.java
  APS
-QualidadeAgua.java
- QualidadeAgua
 TesteController.java
  TesteController
-InstanciasRios.java
- InstanciasRios
 Pagina2Controller.java
  Pagina2Controller
  Pagina2Controller$1
-TesteSQL.java
- TesteSQL
+InstanciasRios.java
+ InstanciasRios
+DAO.java
+ DAO

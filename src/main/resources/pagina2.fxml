@@ -91,7 +91,7 @@
             </Pane>
             <Pane layoutX="461.0" layoutY="70.0" prefHeight="210.0" prefWidth="222.0" styleClass="pane-curiosidade">
                <children>
-                  <ImageView layoutX="79.0" layoutY="2.0">
+                  <ImageView layoutX="79.0" layoutY="5.0">
                      <image>
                         <Image url="@ImageResources/cabeludo.png" />
                      </image>
