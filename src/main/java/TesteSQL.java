@@ -9,10 +9,10 @@ public class TesteSQL {
             System.out.println("CONEKITADU");
         }
         Statement statement = conn.createStatement();
-        ResultSet rs = statement.executeQuery("SELECT * FROM TESTE;");
-        while (rs.next()) {
-            System.out.println(rs.getString("RIO"));
-        }
-
+        ResultSet rs = statement.executeQuery("SELECT * FROM RIOS;");
+        System.out.println(rs.getArray("PrimeiraCuriosidade"));
+//        while (rs.next()) {
+//            System.out.println(rs.getString("Nome"));
+//        }
     }
 }
