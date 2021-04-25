@@ -4,12 +4,6 @@ import java.util.HashMap;
 public class DAO {
     Connection conn;
 
-    public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        System.out.println(DAO.getPrimeiraCuriosidade("Tietê"));
-        System.out.println(DAO.getSegundaCuriosidade("Tietê"));
-        System.out.println(DAO.getTerceiraCuriosidade("Tietê"));
-    }
-
     public DAO() throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String dbUrl = "jdbc:sqlserver://aps2.database.windows.net:1433;database=aps;user=adminaps@aps2;password=Kootra300;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";

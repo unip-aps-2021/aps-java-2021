@@ -55,6 +55,18 @@ public class Pagina2Controller {
     //Usuário de entrada
     @FXML
     public void initialize() {
+        int interval = 20;
+        double start = aba1.getTranslateX();
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            public void run() {
+                sliderAnimation(aba1, start);
+                sliderAnimation(aba2, start);
+                sliderAnimation(aba3, start);
+                sliderAnimation(aba4, start);
+            }
+        }, 0, interval);
+
         labelGrafico.setText(new String("Mais poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
         yAxis.setAnimated(false);
         chart.setLegendVisible(false);
@@ -76,6 +88,7 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba1(ActionEvent event) {
+        labelGrafico.setText(new String("Mais poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
         if (chart.getData() == null) {
             return;
         }
@@ -91,6 +104,7 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba2(ActionEvent event) {
+        labelGrafico.setText(new String("Mais poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
         Rio aricanduva = InstanciasRios.ARICANDUVA.get();
         Rio kurupira = InstanciasRios.KURUPIRA.get();
         Rio jacare = InstanciasRios.JACARE.get();
@@ -104,13 +118,13 @@ public class Pagina2Controller {
         addChart(series2, gato.getNome(), (int) gato.getPorcentagemPoluicao());
         addChart(series2, myu.getNome(), (int) myu.getPorcentagemPoluicao());
         rotate(aricanduva, kurupira, jacare, peixe, gato, myu);
-        if(chart.getData() == null) {
+        if (chart.getData() == null) {
             return;
         }
         chart.getData().remove(series1);
         chart.getData().remove(series3);
         chart.getData().remove(series4);
-        if(!chart.getData().contains(series2)) {
+        if (!chart.getData().contains(series2)) {
             chart.getData().add(series2);
         }
     }
@@ -189,8 +203,8 @@ public class Pagina2Controller {
                         Rio quarto,
                         Rio quinto,
                         Rio sexto) {
-        int delay = 1000;
-        int interval = 18000;
+        int delay = 500;
+        int interval = 20000;
         Timer timer = new Timer();
         List<String> listaTextos = new ArrayList<>();
         listaTextos.add(primeiro.getPrimeiraCuriosidade() + "\n" + primeiro.getSegundaCuriosidade() + "\n" + primeiro.getTerceiraCuriosidade());
@@ -210,5 +224,18 @@ public class Pagina2Controller {
                 textoCabeludo.setText(listaTextos.get(num3));
             }
         }, delay, interval);
+    }
+
+    public void sliderAnimation(Button btn, double start) {
+        if (btn.isHover()) {
+            if (btn.getTranslateX() >= start - 20) {
+                btn.setTranslateX(btn.getTranslateX() - 4);
+
+            }
+        } else {
+            if (btn.getTranslateX() < start) {
+                btn.setTranslateX(btn.getTranslateX() + 4);
+            }
+        }
     }
 }

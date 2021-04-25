@@ -8,16 +8,18 @@ Pagina4Controller.java
  Pagina4Controller
 QualidadeAgua.java
  QualidadeAgua
-Pagina3Controller.java
- Pagina3Controller
+DAO.java
+ DAO
 APS.java
  APS
 TesteController.java
  TesteController
+InstanciasRios.java
+ InstanciasRios
+Pagina3Controller.java
+ Pagina3Controller
+ Pagina3Controller$1
 Pagina2Controller.java
  Pagina2Controller
  Pagina2Controller$1
-InstanciasRios.java
- InstanciasRios
-DAO.java
- DAO
+ Pagina2Controller$2
