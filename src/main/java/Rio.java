@@ -5,12 +5,13 @@ public class Rio {
     private String primeiraCuriosidade;
     private String segundaCuriosidade;
     private String terceiraCuriosidade;
-    private QualidadeAgua qualidadeDaAgua;
+    private String qualidadeDaAgua;
+    private String qualidadeDaAguaString;
 
     public Rio(String nome,
                double longitude,
                double longitudePoluicao,
-               QualidadeAgua qualidadeDaAgua,
+               String qualidadeDaAgua,
                String primeiraCuriosidade,
                String segundaCuriosidade,
                String terceiraCuriosidade) {
@@ -26,7 +27,8 @@ public class Rio {
     public Rio(String nome,
                double longitude,
                double longitudePoluicao,
-               QualidadeAgua qualidadeDaAgua) {
+               String qualidadeDaAgua)
+    {
         this.nome = nome;
         this.longitude = longitude;
         this.longitudePoluicao = longitudePoluicao;
@@ -57,7 +59,7 @@ public class Rio {
         return primeiraCuriosidade;
     }
 
-    public QualidadeAgua getQualidadeDaAgua() {
+    public String getQualidadeDaAgua() {
         return qualidadeDaAgua;
     }
 

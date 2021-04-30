@@ -12,62 +12,20 @@ public class DAO {
         conn = DriverManager.getConnection(dbUrl);
     }
 
-    public void getTudo(String nome) throws SQLException {
-        Statement statement = conn.createStatement();
-        ResultSet rs = statement.executeQuery(String.format("SELECT * FROM RIOS WHERE Nome='%s';", nome));
-        if(rs.next()){
-            System.out.println(rs.getString("Nome"));
-        }
-    }
-
-
-    public static String getPrimeiraCuriosidade(String nomeRio) {
-        String curiosidade = "";
-        try {
-            curiosidade = new DAO().getCuriosidade("PrimeiraCuriosidade").get(nomeRio);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        return curiosidade;
-    }
-
-    public static String getSegundaCuriosidade(String nomeRio) {
-        String curiosidade = "";
-        try {
-            curiosidade = new DAO().getCuriosidade("SegundaCuriosidade").get(nomeRio);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        return curiosidade;
-    }
-
-    public static String getTerceiraCuriosidade(String nomeRio) {
-        String curiosidade = "";
-        try {
-            curiosidade = new DAO().getCuriosidade("TerceiraCuriosidade").get(nomeRio);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        return curiosidade;
-    }
-
-    private HashMap<String, String> getCuriosidade(String curiosidade) throws SQLException {
-        Statement statement = conn.createStatement();
-        ResultSet rs = statement.executeQuery(String.format("SELECT Nome, %s FROM RIOS;", curiosidade));
-        HashMap<String, String> hashCuriosidade = new HashMap<>();
+    public Rio getTudo(int id) throws SQLException {
+        Rio rio = null;
+        PreparedStatement statement = conn.prepareStatement("SELECT * FROM RIOS WHERE Id=?;");
+        statement.setInt(1, id);
+        ResultSet rs = statement.executeQuery();
         while (rs.next()) {
-            hashCuriosidade.put(rs.getString("Nome"), rs.getString(curiosidade));
+            rio = new Rio(rs.getString("nome"),
+                    rs.getDouble("longitude"),
+                    rs.getDouble("longitudepoluicao"),
+                    rs.getString("qualidadedaagua"),
+                    rs.getString("primeiracuriosidade"),
+                    rs.getString("segundacuriosidade"),
+                    rs.getString("terceiracuriosidade"));
         }
-        return hashCuriosidade;
-    }
-
-    public HashMap<String, Map<String, String>> getTextos() throws SQLException {
-        Statement statement = conn.createStatement();
-        ResultSet rs = statement.executeQuery("SELECT * FROM CONSEQUENCIAS;");
-        HashMap<String, Map<String, String>> textosHash = new HashMap<>();
-        while (rs.next()){
-            textosHash.put(rs.getString("Id"), Collections.singletonMap(rs.getString("Titulo"), rs.getString("Texto")));
-        }
-        return textosHash;
+        return rio;
     }
 }
