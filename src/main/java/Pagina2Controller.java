@@ -10,6 +10,7 @@ import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 
 import java.nio.charset.StandardCharsets;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -54,7 +55,7 @@ public class Pagina2Controller {
     //Criar novo Rio, Testando OOP
     //Usuário de entrada
     @FXML
-    public void initialize() {
+    public void initialize() throws SQLException, ClassNotFoundException {
         int interval = 20;
         double start = aba1.getTranslateX();
         Timer timer = new Timer();

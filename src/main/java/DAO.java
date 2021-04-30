@@ -12,6 +12,14 @@ public class DAO {
         conn = DriverManager.getConnection(dbUrl);
     }
 
+    public void getTudo(String nome) throws SQLException {
+        Statement statement = conn.createStatement();
+        ResultSet rs = statement.executeQuery(String.format("SELECT * FROM RIOS WHERE Nome='%s';", nome));
+        if(rs.next()){
+            System.out.println(rs.getString("Nome"));
+        }
+    }
+
 
     public static String getPrimeiraCuriosidade(String nomeRio) {
         String curiosidade = "";
