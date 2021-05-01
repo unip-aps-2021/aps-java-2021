@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="650.0" styleClass="anchor-pane" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <AnchorPane layoutX="113.0" layoutY="64.0" prefHeight="568.0" prefWidth="424.0" style="-fx-background-radius: 15;" styleClass="anchor-pane-login">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="77.0" layoutX="168.0" layoutY="24.0">
+               <image>
+                  <Image url="@ImageResources/tor2.PNG" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="221.0" layoutY="447.0" prefHeight="22.0" prefWidth="97.0" style="-fx-text-fill: #3399ff;" styleClass="botao-cadastro" text="Cadastre-se" />
+            <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="122.0" layoutY="274.0" opacity="0.3">
+               <image>
+                  <Image url="@ImageResources/email.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="127.0" layoutY="319.0" opacity="0.3">
+               <image>
+                  <Image url="@ImageResources/cadeado.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="124.0" layoutY="146.0" prefHeight="74.0" prefWidth="164.0" style="-fx-text-fill: #3399ff;" text="Login">
+               <font>
+                  <Font name="Segoe UI Semibold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="102.0" layoutX="323.0" layoutY="46.0">
+               <image>
+                  <Image url="@ImageResources/halfcirculo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="97.0" layoutY="348.0">
+               <image>
+                  <Image url="@ImageResources/halfcirculo2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="123.0" layoutY="203.0" opacity="0.5" prefHeight="17.0" prefWidth="198.0" text="Entre com suas informações abaixo" />
+            <JFXTextField layoutX="155.0" layoutY="272.0" opacity="0.65" prefHeight="24.0" prefWidth="143.0" promptText="E-mail" unFocusColor="#3399ff" />
+            <JFXTextField layoutX="151.0" layoutY="318.0" prefHeight="24.0" prefWidth="143.0" unFocusColor="#3399ff" />
+            <Line endX="85.0" layoutX="213.0" layoutY="297.0" startX="-100.0" stroke="#3399ff" strokeWidth="2.0" />
+            <Line endX="85.0" layoutX="214.0" layoutY="344.0" startX="-100.0" stroke="#3399ff" strokeWidth="2.0" />
+            <JFXTextField layoutX="155.0" layoutY="318.0" opacity="0.39" prefHeight="24.0" prefWidth="143.0" promptText="E-mail" text="Senha" unFocusColor="#3399ff" />
+            <JFXButton layoutX="125.0" layoutY="382.0" prefHeight="34.0" prefWidth="158.0" styleClass="button-login" text="Login">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="122.0" layoutY="448.0" opacity="0.39" prefHeight="17.0" prefWidth="143.0" text="Não tem uma conta?" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

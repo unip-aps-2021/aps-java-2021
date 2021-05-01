@@ -1,0 +1,18 @@
+.tab-pane .tab-header-area .tab-header-background {
+   -fx-background-color: #063047;
+}
+
+.quadradawn{
+        -fx-background-color: #64AACF;
+}
+
+.tab-button {
+    -fx-background-color:  #1287c6;
+    -fx-text-base-color: #ffffff;
+}
+
+.anchor-pane {
+    -fx-background-color:  #1287c6;
+    -fx-pref-width: 50%;
+    -fx-pref-height: 50%;
+}

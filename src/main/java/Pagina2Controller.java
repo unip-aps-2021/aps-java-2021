@@ -25,6 +25,8 @@ public class Pagina2Controller {
     private final XYChart.Series<String, Integer> series3 = new XYChart.Series<>();
     private final XYChart.Series<String, Integer> series4 = new XYChart.Series<>();
 
+    Animations animations = new Animations();
+
     @FXML
     private TabPane tabPanePag2;
     @FXML
@@ -65,10 +67,10 @@ public class Pagina2Controller {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
-                sliderAnimation(aba1, start);
-                sliderAnimation(aba2, start);
-                sliderAnimation(aba3, start);
-                sliderAnimation(aba4, start);
+                animations.sliderAnimation(aba1, "Left", start, 10);
+                animations.sliderAnimation(aba2, "Right", start, 10);
+                animations.sliderAnimation(aba3, "Up", start, 10);
+                animations.sliderAnimation(aba4, "Down", start, 10);
             }
         }, 0, interval);
 
@@ -229,18 +231,5 @@ public class Pagina2Controller {
                 textoCabeludo.setText(listaTextos.get(num3));
             }
         }, delay, interval);
-    }
-
-    public void sliderAnimation(Button btn, double start) {
-        if (btn.isHover()) {
-            if (btn.getTranslateX() >= start - 20) {
-                btn.setTranslateX(btn.getTranslateX() - 4);
-
-            }
-        } else {
-            if (btn.getTranslateX() < start) {
-                btn.setTranslateX(btn.getTranslateX() + 4);
-            }
-        }
     }
 }

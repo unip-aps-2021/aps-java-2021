@@ -1,0 +1,53 @@
+.grafico {
+    -fx-horizontal-grid-lines-visible: false;
+    -fx-vertical-grid-lines-visible:false;
+    -fx-alternative-column-fill-visible: false;
+    -fx-alternative-row-fill-visible: false;
+}
+
+.chart-plot-background{
+    -fx-background-color: transparent;
+}
+
+.chart-bar{
+    -fx-background-color: #64aacf;
+}
+
+.tab-pane-pag2 .tab-header-area .tab-header-background {
+   -fx-background-color: #243e69;
+}
+
+.tab-button1-pag2 {
+    -fx-background-color:  linear-gradient(to top, #59849c 0%, #3399ff 100%);
+}
+
+.tab-button2-pag2 {
+    -fx-background-color:  linear-gradient(to top, #59849c 0%, #3399ff 100%);
+}
+
+.vbox {
+     -fx-background-color: #1287c6;
+}
+
+.pane-grafico {
+    -fx-background-color: #063047;
+}
+
+.chart-button{
+    -fx-background-radius:  250;
+    -fx-background-color:  #063047;
+}
+
+.pane-imagem {
+    -fx-background-color: #ffffff;
+}
+
+.pane-curiosidade {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: #666666;
+}
+
+.jfx-text-area .centeredTextArea .scroll-pane .content .text {
+   -fx-text-alignment: center;
+}

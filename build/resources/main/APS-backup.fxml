@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: #59849C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
+   <children>
+      <HBox prefHeight="21.0" prefWidth="468.0" spacing="15.0" style="-fx-background-color: #C4C4C4;">
+         <children>
+            <MenuButton fx:id="menuButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="33.0" style="-fx-background-image: url('ImageResources/MenuBtn.png');" styleClass=".menu-button" stylesheets="@css/index.css">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </MenuButton>
+            <Label prefHeight="35.0" prefWidth="226.0" text="Tech Rivers LTDA">
+               <font>
+                  <Font name="Yu Gothic Regular" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="33.0">
+               <image>
+                  <Image url="@ImageResources/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="-15.0" right="145.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="176.0">
+               <children>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ff0000; -fx-background-radius: 0;" text="X" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label fx:id="riosLabel" alignment="CENTER" prefHeight="66.0" prefWidth="324.0" text="Rios de SP" textFill="WHITE">
+         <font>
+            <Font name="SimSun" size="45.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <Glow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="350.0" prefWidth="650.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Button fx:id="aba1" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#botao1" onMouseEntered="#sout" prefHeight="25.0" prefWidth="67.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 1" textFill="WHITE" />
+                  <Button fx:id="aba2" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#botao2" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 2" textFill="WHITE" />
+                  <Button fx:id="aba3" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 3" textFill="WHITE" />
+                  <Button fx:id="aba4" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" style="-fx-background-radius: 25; -fx-background-color: #3e588a;" text="Aba 4" textFill="WHITE" />
+               </children>
+            </VBox>
+            <BarChart fx:id="tabela" layoutX="88.0" prefHeight="225.0" prefWidth="500.0" style="-fx-background-color: #64739B;">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+      <Pane prefHeight="345.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="439.0" layoutX="123.0" pickOnBounds="true">
+               <image>
+                  <Image url="@ImageResources/RioExemplo.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="123.0" prefHeight="50.0" prefWidth="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebebe2" height="200.0" layoutX="123.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="439.0" />
+            <Label layoutX="249.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="153.0" text="Rio Tio Etê" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" layoutX="129.0" layoutY="41.0" prefHeight="154.0" prefWidth="430.0" styleClass="text-area" stylesheets="@css/index.css" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#10;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#10;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#10;&#10;&#10;" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
