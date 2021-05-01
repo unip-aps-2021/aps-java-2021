@@ -10,3 +10,7 @@
     -fx-text-fill: white;
     -fx-background-color: linear-gradient(to top right, #3399ff 0%, #59849c 100%);
 }
+
+.botao-cadastro{
+    -fx-text-fill:  #3399ff;
+}

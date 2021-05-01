@@ -19,7 +19,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 @SuppressWarnings("unused")
 public class Pagina2Controller {
-    DAO dao = new DAO();
+    List<Rio> rios = new DAO().get();
     private final XYChart.Series<String, Integer> series1 = new XYChart.Series<>();
     private final XYChart.Series<String, Integer> series2 = new XYChart.Series<>();
     private final XYChart.Series<String, Integer> series3 = new XYChart.Series<>();
@@ -59,7 +59,7 @@ public class Pagina2Controller {
     //Criar novo Rio, Testando OOP
     //Usuário de entrada
     @FXML
-    public void initialize() throws SQLException {
+    public void initialize(){
         int interval = 20;
         double start = aba1.getTranslateX();
         Timer timer = new Timer();
@@ -75,12 +75,12 @@ public class Pagina2Controller {
         labelGrafico.setText(new String("Mais poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
         yAxis.setAnimated(false);
         chart.setLegendVisible(false);
-        Rio tiete = dao.getTudo(1);
-        Rio pinheiros = dao.getTudo(2);
-        Rio tamanduatei = dao.getTudo(3);
-        Rio piracicaba = dao.getTudo(4);
-        Rio anhangabau = dao.getTudo(5);
-        Rio paraibadosul = dao.getTudo(6);
+        Rio tiete = rios.get(0);
+        Rio pinheiros = rios.get(1);
+        Rio tamanduatei = rios.get(2);
+        Rio piracicaba = rios.get(3);
+        Rio anhangabau = rios.get(4);
+        Rio paraibadosul = rios.get(5);
         addChart(series1, tiete.getNome(), (int) tiete.getPorcentagemPoluicao());
         addChart(series1, pinheiros.getNome(), (int) pinheiros.getPorcentagemPoluicao());
         addChart(series1, tamanduatei.getNome(), (int) tamanduatei.getPorcentagemPoluicao());
@@ -108,14 +108,14 @@ public class Pagina2Controller {
     }
 
     @FXML
-    private void setAba2(ActionEvent event) throws SQLException {
+    private void setAba2(ActionEvent event){
         labelGrafico.setText(new String("Mais poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
-        Rio aricanduva = dao.getTudo(7);
-        Rio kurupira = dao.getTudo(8);
-        Rio jacare = dao.getTudo(9);
-        Rio peixe = dao.getTudo(10);
-        Rio gato = dao.getTudo(11);
-        Rio myu = dao.getTudo(12);
+        Rio aricanduva = rios.get(6);
+        Rio kurupira = rios.get(7);
+        Rio jacare = rios.get(8);
+        Rio peixe = rios.get(9);
+        Rio gato = rios.get(10);
+        Rio myu = rios.get(11);
         addChart(series2, aricanduva.getNome(), (int) aricanduva.getPorcentagemPoluicao());
         addChart(series2, kurupira.getNome(), (int) kurupira.getPorcentagemPoluicao());
         addChart(series2, jacare.getNome(), (int) jacare.getPorcentagemPoluicao());
@@ -135,14 +135,14 @@ public class Pagina2Controller {
     }
 
     @FXML
-    private void setAba3(ActionEvent event) throws SQLException{
+    private void setAba3(ActionEvent event){
         labelGrafico.setText(new String("Menos poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
-        Rio pirapata = dao.getTudo(13);
-        Rio camboio = dao.getTudo(14);
-        Rio leopardocaruru = dao.getTudo(15);
-        Rio beauty = dao.getTudo(16);
-        Rio patacamelo = dao.getTudo(17);
-        Rio pedrinhas = dao.getTudo(18);
+        Rio pirapata = rios.get(12);
+        Rio camboio = rios.get(13);
+        Rio leopardocaruru = rios.get(14);
+        Rio beauty = rios.get(15);
+        Rio patacamelo = rios.get(16);
+        Rio pedrinhas = rios.get(17);
         addChart(series3, pirapata.getNome(), (int) pirapata.getPorcentagemPoluicao());
         addChart(series3, camboio.getNome(), (int) camboio.getPorcentagemPoluicao());
         addChart(series3, leopardocaruru.getNome(), (int) leopardocaruru.getPorcentagemPoluicao());
@@ -162,14 +162,14 @@ public class Pagina2Controller {
     }
 
     @FXML
-    private void setAba4(ActionEvent event) throws SQLException{
+    private void setAba4(ActionEvent event){
         labelGrafico.setText(new String("Menos poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
-        Rio pinapora = dao.getTudo(19);
-        Rio ferroja = dao.getTudo(20);
-        Rio amagua = dao.getTudo(21);
-        Rio cantos = dao.getTudo(22);
-        Rio martelo = dao.getTudo(23);
-        Rio delta = dao.getTudo(24);
+        Rio pinapora = rios.get(18);
+        Rio ferroja = rios.get(19);
+        Rio amagua = rios.get(20);
+        Rio cantos = rios.get(21);
+        Rio martelo = rios.get(22);
+        Rio delta = rios.get(23);
         addChart(series4, pinapora.getNome(), (int) pinapora.getPorcentagemPoluicao());
         addChart(series4, ferroja.getNome(), (int) ferroja.getPorcentagemPoluicao());
         addChart(series4, amagua.getNome(), (int) amagua.getPorcentagemPoluicao());

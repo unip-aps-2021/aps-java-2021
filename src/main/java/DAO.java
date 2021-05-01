@@ -1,7 +1,6 @@
 import java.sql.*;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DAO {
     Connection conn;
@@ -12,20 +11,23 @@ public class DAO {
         conn = DriverManager.getConnection(dbUrl);
     }
 
-    public Rio getTudo(int id) throws SQLException {
-        Rio rio = null;
-        PreparedStatement statement = conn.prepareStatement("SELECT * FROM RIOS WHERE Id=?;");
-        statement.setInt(1, id);
-        ResultSet rs = statement.executeQuery();
-        while (rs.next()) {
-            rio = new Rio(rs.getString("nome"),
-                    rs.getDouble("longitude"),
-                    rs.getDouble("longitudepoluicao"),
-                    rs.getString("qualidadedaagua"),
-                    rs.getString("primeiracuriosidade"),
-                    rs.getString("segundacuriosidade"),
-                    rs.getString("terceiracuriosidade"));
+    public List<Rio> get() throws SQLException {
+        int[] ids = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24};
+        List<Rio> rios = new ArrayList<>();
+        for (int i = 0; i < ids.length - 1; i++) {
+            PreparedStatement statement = conn.prepareStatement("SELECT * FROM RIOS WHERE Id=?");
+            statement.setInt(1, ids[i]);
+            ResultSet rs = statement.executeQuery();
+            while (rs.next()) {
+                rios.add(new Rio(rs.getString("nome"),
+                        rs.getDouble("longitude"),
+                        rs.getDouble("longitudepoluicao"),
+                        rs.getString("qualidadedaagua"),
+                        rs.getString("primeiracuriosidade"),
+                        rs.getString("segundacuriosidade"),
+                        rs.getString("terceiracuriosidade")));
+            }
         }
-        return rio;
+        return rios;
     }
 }
