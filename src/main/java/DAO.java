@@ -30,4 +30,26 @@ public class DAO {
         }
         return rios;
     }
+
+    public List<Consequencia> getConsequencia() throws SQLException {
+        List<Consequencia> consequencias = new ArrayList<>();
+        PreparedStatement ps = conn.prepareStatement("SELECT * FROM CONSEQUENCIAS");
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            consequencias.add(new Consequencia(rs.getInt("Id"),
+                    rs.getString("Titulo"),
+                    rs.getString("Texto")));
+        }
+        return consequencias;
+    }
+
+    public void inserirUsuario(int id, String nome, String email, String senha) throws SQLException {
+
+        PreparedStatement ps = conn.prepareStatement("INSERT INTO USUARIOS VALUES(?, ?, ?, ?)");
+        ps.setInt(1, id);
+        ps.setString(2, nome);
+        ps.setString(3, email);
+        ps.setString(4, senha);
+    }
+
 }

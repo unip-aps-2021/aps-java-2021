@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="650.0" styleClass="anchor-pane" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CadastroController">
+<AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CadastroController">
    <children>
-      <AnchorPane layoutX="113.0" layoutY="64.0" prefHeight="568.0" prefWidth="424.0" style="-fx-background-radius: 15;" styleClass="anchor-pane-login">
+      <AnchorPane layoutX="138.0" layoutY="41.0" prefHeight="568.0" prefWidth="424.0" style="-fx-background-radius: 15;" styleClass="anchor-pane-login">
          <children>
             <ImageView fitHeight="102.0" fitWidth="77.0" layoutX="168.0" layoutY="24.0">
                <image>
@@ -33,7 +33,7 @@
                </image>
             </ImageView>
             <Label layoutX="123.0" layoutY="203.0" opacity="0.5" prefHeight="17.0" prefWidth="198.0" text="Entre suas informações abaixo" />
-            <JFXTextField layoutX="122.0" layoutY="240.0" opacity="0.65" prefHeight="24.0" prefWidth="143.0" promptText="Nome" unFocusColor="#369eff" />
+            <JFXTextField fx:id="textFieldNome" focusColor="#405aa800" layoutX="122.0" layoutY="240.0" opacity="0.65" prefHeight="24.0" prefWidth="143.0" promptText="Nome" unFocusColor="#369eff" />
             <JFXButton layoutX="115.0" layoutY="414.0" prefHeight="34.0" prefWidth="158.0" styleClass="button-login" text="Cadastre-se">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />

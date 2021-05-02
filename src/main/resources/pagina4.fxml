@@ -6,12 +6,11 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-
 <AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/pagina4.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina4Controller">
    <children>
       <TextFlow layoutX="49.0" layoutY="95.0" prefHeight="458.0" prefWidth="615.0">
          <children>
-            <JFXTextArea editable="false" prefHeight="304.0" prefWidth="606.0" styleClass="text-area" text="1.Tal tal tal taltal tal tal tal&#10;2.tul tul tul tul&#10;3.tel tel tel tel&#10;4.ueu ueu ueu ueu&#10;5.biti biti &#10;6.baite bote" unFocusColor="#ffffff00">
+            <JFXTextArea editable="false" focusColor="#405aa800" prefHeight="304.0" prefWidth="606.0" styleClass="text-area" text="1.Tal tal tal taltal tal tal tal&#10;2.tul tul tul tul&#10;3.tel tel tel tel&#10;4.ueu ueu ueu ueu&#10;5.biti biti &#10;6.baite bote" unFocusColor="#ffffff00">
                <font>
                   <Font size="25.0" />
                </font>
