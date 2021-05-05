@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DAO {
-    Connection conn;
+    private final Connection conn;
 
     public DAO() throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -43,13 +43,11 @@ public class DAO {
         return consequencias;
     }
 
-    public void inserirUsuario(int id, String nome, String email, String senha) throws SQLException {
-
-        PreparedStatement ps = conn.prepareStatement("INSERT INTO USUARIOS VALUES(?, ?, ?, ?)");
-        ps.setInt(1, id);
-        ps.setString(2, nome);
-        ps.setString(3, email);
-        ps.setString(4, senha);
+    public void inserirUsuario(String nome, String email, String senha) throws SQLException {
+        PreparedStatement ps = conn.prepareStatement("INSERT INTO USUARIOS VALUES(?, ?, ?)");
+        ps.setString(1, nome);
+        ps.setString(2, email);
+        ps.setString(3, senha);
+        int sla = ps.executeUpdate();
     }
-
 }

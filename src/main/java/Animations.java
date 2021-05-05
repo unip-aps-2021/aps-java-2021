@@ -1,8 +1,8 @@
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 
 public class Animations {
 
-    public void sliderAnimation(Button btn, String side, double startPosition, int limitPosition) {
+    public void sliderAnimation(Control btn, String side, double startPosition, int limitPosition) {
             switch (side){
                 case "Left":
                     if (btn.isHover()) {

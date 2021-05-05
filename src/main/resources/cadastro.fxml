@@ -33,15 +33,20 @@
                </image>
             </ImageView>
             <Label layoutX="123.0" layoutY="203.0" opacity="0.5" prefHeight="17.0" prefWidth="198.0" text="Entre suas informações abaixo" />
-            <JFXTextField fx:id="textFieldNome" focusColor="#405aa800" layoutX="122.0" layoutY="240.0" opacity="0.65" prefHeight="24.0" prefWidth="143.0" promptText="Nome" unFocusColor="#369eff" />
-            <JFXButton layoutX="115.0" layoutY="414.0" prefHeight="34.0" prefWidth="158.0" styleClass="button-login" text="Cadastre-se">
+            <JFXTextField fx:id="nome" focusColor="#405aa800" layoutX="122.0" layoutY="240.0" opacity="0.65" prefHeight="24.0" prefWidth="143.0" promptText="Nome" unFocusColor="#369eff" />
+            <JFXButton layoutX="115.0" layoutY="414.0" onAction="#btnCadastro" prefHeight="34.0" prefWidth="158.0" styleClass="button-login" text="Cadastre-se">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXTextField focusColor="#1346dd00" layoutX="122.0" layoutY="327.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="Senha" unFocusColor="#359dff" />
-            <JFXTextField focusColor="#1346dd00" layoutX="122.0" layoutY="369.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="Confirmar senha" unFocusColor="#359dff" />
-            <JFXTextField focusColor="#1346dd00" layoutX="122.0" layoutY="284.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="E-mail" unFocusColor="#3399ff" />
+            <JFXTextField fx:id="senha" focusColor="#1346dd00" layoutX="122.0" layoutY="327.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="Senha" unFocusColor="#359dff" />
+            <JFXTextField fx:id="confirmarSenha" focusColor="#1346dd00" layoutX="122.0" layoutY="369.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="Confirmar senha" unFocusColor="#359dff" />
+            <JFXTextField fx:id="email" focusColor="#1346dd00" layoutX="122.0" layoutY="284.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="E-mail" unFocusColor="#3399ff" />
+            <Label fx:id="labelErro" layoutX="115.0" layoutY="460.0" prefHeight="42.0" prefWidth="158.0" textFill="RED">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

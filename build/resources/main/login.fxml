@@ -18,7 +18,7 @@
                   <Image url="@ImageResources/tor2.PNG" />
                </image>
             </ImageView>
-            <JFXButton layoutX="221.0" layoutY="444.0" prefHeight="22.0" prefWidth="97.0" ripplerFill="WHITE" style="-fx-text-fill: #3399ff;" styleClass="botao-cadastro" text="Cadastre-se" />
+            <JFXButton fx:id="cadastro" layoutX="221.0" layoutY="446.0" onAction="#setCadastro" prefHeight="22.0" prefWidth="97.0" ripplerFill="WHITE" style="-fx-text-fill: #3399ff;" styleClass="botao-cadastro" text="Cadastre-se" />
             <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="122.0" layoutY="274.0" opacity="0.3">
                <image>
                   <Image url="@ImageResources/email.PNG" />
@@ -54,7 +54,7 @@
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </JFXButton>
-            <Label layoutX="122.0" layoutY="448.0" opacity="0.39" prefHeight="17.0" prefWidth="143.0" text="Não tem uma conta?" />
+            <Label layoutX="122.0" layoutY="448.0" opacity="0.39" prefHeight="17.0" prefWidth="113.0" text="Não tem uma conta?" />
          </children>
       </AnchorPane>
    </children>
