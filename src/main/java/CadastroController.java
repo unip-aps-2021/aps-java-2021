@@ -1,10 +1,16 @@
+import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
+import javafx.stage.Stage;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
+import java.util.List;
 
 public class CadastroController {
 
@@ -15,10 +21,10 @@ public class CadastroController {
     private JFXTextField email;
 
     @FXML
-    private JFXTextField senha;
+    private JFXPasswordField senha;
 
     @FXML
-    private JFXTextField confirmarSenha;
+    private JFXPasswordField confirmarSenha;
 
     @FXML
     private Label labelErro;
@@ -28,29 +34,32 @@ public class CadastroController {
     }
 
     @FXML
-    public void btnCadastro() throws SQLException, ClassNotFoundException {
+    public void btnCadastro() throws SQLException, ClassNotFoundException, IOException {
         if (!confirmarSenha.getText().isEmpty()) {
             DAO dao = new DAO();
-            dao.inserirUsuario(nome.getText(), email.getText(), senha.getText());
-            CharSequence proibido = "()/\\,.;:";
-            if (nome.getText().contains(proibido) ||
-                    email.getText().contains(proibido) ||
-                    senha.getText().contains(proibido)) {
-                labelErro.setText("Caractere inválido, digite novamente");
-                nome.setUnFocusColor(Paint.valueOf(String.valueOf(Color.RED)));
-                email.setUnFocusColor(Paint.valueOf(String.valueOf(Color.RED)));
-                senha.setUnFocusColor(Paint.valueOf(String.valueOf(Color.RED)));
-                confirmarSenha.setUnFocusColor(Paint.valueOf(String.valueOf(Color.RED)));
+            List<String> usuarios = dao.getEmail();
+            for (String u : usuarios) {
+                if (u.contains(email.getText())) {
+                    labelErro.setText(new String("Email já cadastrado!".getBytes(), StandardCharsets.UTF_8));
+                    return;
+                }
+                labelErro.setText("Cadastrado com sucesso");
             }
+            if(labelErro.getText().equals("Cadastrado com sucesso")){
+                voltaLogin();
+            }
+            dao.inserirUsuario(nome.getText(), email.getText(), senha.getText());
         }
     }
-//
-//    private static void showAlert(Alert.AlertType alertType, Window owner, String title, String message) {
-//        Alert alert = new Alert(alertType);
-//        alert.setTitle(title);
-//        alert.setHeaderText(null);
-//        alert.setContentText(message);
-//        alert.initOwner(owner);
-//        alert.show();
+
+    public void voltaLogin() throws IOException, SQLException, ClassNotFoundException {
+        Stage stageAntes = (Stage) labelErro.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+        Parent root1 = fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        stageAntes.close();
+        stage.show();
+    }
 }
 

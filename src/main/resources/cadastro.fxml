@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -39,14 +40,14 @@
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXTextField fx:id="senha" focusColor="#1346dd00" layoutX="122.0" layoutY="327.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="Senha" unFocusColor="#359dff" />
-            <JFXTextField fx:id="confirmarSenha" focusColor="#1346dd00" layoutX="122.0" layoutY="369.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="Confirmar senha" unFocusColor="#359dff" />
             <JFXTextField fx:id="email" focusColor="#1346dd00" layoutX="122.0" layoutY="284.0" opacity="0.57" prefHeight="24.0" prefWidth="143.0" promptText="E-mail" unFocusColor="#3399ff" />
-            <Label fx:id="labelErro" layoutX="115.0" layoutY="460.0" prefHeight="42.0" prefWidth="158.0" textFill="RED">
+            <Label fx:id="labelErro" layoutX="98.0" layoutY="461.0" prefHeight="42.0" prefWidth="198.0" textFill="RED">
                <font>
-                  <Font size="21.0" />
+                  <Font name="Segoe UI Semibold" size="21.0" />
                </font>
             </Label>
+            <JFXPasswordField fx:id="senha" focusColor="#369eff00" layoutX="122.0" layoutY="336.0" opacity="0.57" promptText="Senha" unFocusColor="#3399ff" />
+            <JFXPasswordField fx:id="confirmarSenha" focusColor="#369eff00" layoutX="122.0" layoutY="382.0" opacity="0.57" promptText="Confirmar Senha" unFocusColor="#3399ff" />
          </children>
       </AnchorPane>
    </children>

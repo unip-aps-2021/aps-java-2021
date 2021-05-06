@@ -50,4 +50,33 @@ public class DAO {
         ps.setString(3, senha);
         int sla = ps.executeUpdate();
     }
+
+    public List<String> getEmail() throws SQLException {
+        List<String> usuarios = new ArrayList<>();
+        PreparedStatement ps = conn.prepareStatement("SELECT Email FROM USUARIOS");
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            usuarios.add(rs.getString("Email"));
+        }
+        return usuarios;
+    }
+
+    public boolean isUsuario(String email, String senha) throws SQLException {
+        boolean bool = false;
+        List<Usuario> usuarios = new ArrayList<>();
+        PreparedStatement ps = conn.prepareStatement("SELECT * FROM USUARIOS");
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            usuarios.add(new Usuario(rs.getString("Nome"),
+                    rs.getString("Email"),
+                    rs.getString("Senha")));
+        }
+        for (Usuario u : usuarios) {
+            if (email.equals(u.getEmail()) && senha.equals(u.getSenha())) {
+                bool = true;
+                break;
+            }
+        }
+        return bool;
+    }
 }
