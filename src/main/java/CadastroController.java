@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class CadastroController {
 
     @FXML
@@ -45,14 +46,14 @@ public class CadastroController {
                 }
                 labelErro.setText("Cadastrado com sucesso");
             }
-            if(labelErro.getText().equals("Cadastrado com sucesso")){
+            if (labelErro.getText().equals("Cadastrado com sucesso")) {
                 voltaLogin();
             }
             dao.inserirUsuario(nome.getText(), email.getText(), senha.getText());
         }
     }
 
-    public void voltaLogin() throws IOException, SQLException, ClassNotFoundException {
+    public void voltaLogin() throws IOException {
         Stage stageAntes = (Stage) labelErro.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
         Parent root1 = fxmlLoader.load();

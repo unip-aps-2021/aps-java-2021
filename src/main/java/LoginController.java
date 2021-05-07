@@ -14,23 +14,29 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 
+@SuppressWarnings("unused")
 public class LoginController {
 
-    @FXML private JFXButton login;
+    @FXML
+    private JFXButton login;
 
-    @FXML private JFXButton cadastro;
+    @FXML
+    private JFXButton cadastro;
 
-    @FXML private Label labelErro;
+    @FXML
+    private Label labelErro;
 
-    @FXML private JFXTextField emailTxt;
+    @FXML
+    private JFXTextField emailTxt;
 
-    @FXML private JFXPasswordField senhaTxt;
+    @FXML
+    private JFXPasswordField senhaTxt;
 
     @FXML
     private void setLogin(ActionEvent event) throws IOException, SQLException, ClassNotFoundException {
-        if(new DAO().isUsuario(emailTxt.getText(), senhaTxt.getText())){
+        if (new DAO().isUsuario(emailTxt.getText(), senhaTxt.getText())) {
             Stage stageAntes = (Stage) login.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("aps.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("APS.fxml"));
             Parent root1 = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Tech Rivers LTDA");
@@ -39,7 +45,7 @@ public class LoginController {
             stageAntes.close();
             stage.show();
         } else {
-            labelErro.setText(new String("Login Inválido".getBytes(), StandardCharsets.UTF_8));
+            labelErro.setText(new String("Login Inválido!".getBytes(), StandardCharsets.UTF_8));
         }
     }
 

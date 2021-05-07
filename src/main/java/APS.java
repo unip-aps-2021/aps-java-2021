@@ -19,35 +19,11 @@ public class APS extends Application {
 //    private double yOffset = 0;
 
     @Override
+    @SuppressWarnings("unused")
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("APS.fxml"));
         stage.setTitle("Tech Rivers LTDA");
         stage.getIcons().add(new Image("/ImageResources/logo.png"));
-
-//        double x = Screen.getScreens().get(0).getVisualBounds().getWidth();
-//        double y = Screen.getScreens().get(0).getVisualBounds().getHeight();
-//        double perWidth = x * 0.5;
-//        double perHeight = y * 0.9;
-//        System.out.println("X: " + perWidth);
-//        System.out.println("Y: " + perHeight);
-
-//        stage.initStyle(StageStyle.UNDECORATED);
-//
-//        root.setOnMousePressed(new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                xOffset = event.getSceneX();
-//                yOffset = event.getSceneY();
-//            }
-//        });
-//
-//        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                stage.setX(event.getScreenX() - xOffset);
-//                stage.setY(event.getScreenY() - yOffset);
-//            }
-//        });
 
         Menu menu = new Menu("Menu");
 
@@ -78,46 +54,4 @@ public class APS extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
-
-
-
-//    @Override
-//    public void start(Stage stage) {
-//        Parent root = null;
-//        try {
-//            root = FXMLLoader.load(getClass().getResource("APS.fxml"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        root.setOnMousePressed(new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                xOffset = event.getSceneX();
-//                yOffset = event.getSceneY();
-//                System.out.println("X Offset: " + xOffset + "\nY Offset: " + yOffset);
-//            }
-//        });
-//
-//        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                stage.setX(event.getScreenX() - xOffset);
-//                stage.setY(event.getScreenY() - yOffset);
-//            }
-//        });
-//
-//
-//        Scene scene = new Scene(root, 600, 400);
-//
-//        stage.setTitle("FXML APS");
-//        stage.initStyle(StageStyle.UNDECORATED);
-//        stage.setScene(scene);
-//        stage.show();
-//    }
-//
-//    public static void main(String[] args) {
-//        launch(args);
-//    }
 }

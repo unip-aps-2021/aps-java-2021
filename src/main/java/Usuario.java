@@ -1,5 +1,6 @@
 import java.util.Objects;
 
+@SuppressWarnings("unused")
 public class Usuario {
     private String nome;
     private String email;
