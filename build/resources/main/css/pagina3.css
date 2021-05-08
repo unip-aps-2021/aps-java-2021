@@ -3,5 +3,9 @@
 }
 
 .botao-mudar {
+    -fx-background-color: #3399ff;
+}
+
+.pane {
     -fx-background-color: #063047;
 }

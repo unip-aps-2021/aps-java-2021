@@ -14,71 +14,67 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<TabPane fx:id="tabPane" stylesheets="@css/index.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <tabs>
-      <Tab styleClass="tab-button" text="Página 1">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane">
-               <children>
-                  <Pane layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="650.0">
-                     <children>
-                        <Pane layoutX="35.0" layoutY="21.0" prefHeight="494.0" prefWidth="618.0" styleClass="quadradawn">
-                           <children>
-                              <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
-                                 <children>
-                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" wrappingWidth="428.7578125">
-                                       <font>
-                                          <Font size="14.0" />
-                                       </font>
-                                    </Text>
-                                 </children>
-                              </TextFlow>
-                              <Button layoutX="209.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
-                              <Button layoutX="259.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
-                              <Button layoutX="362.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;" text=" " />
-                              <Button layoutX="309.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
-                              <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="209.0" layoutY="190.0">
-                                 <image>
-                                    <Image url="@ImageResources/logoazul.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </Pane>
-                     </children>
-                  </Pane>
-                  <Label fx:id="riosLabel" alignment="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="66.0" prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
+<TabPane fx:id="tabPane" stylesheets="@css/index.css" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <Tab styleClass="tab-button" text="Início">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane">
+         <Pane layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="650.0">
+            <Pane layoutX="35.0" layoutY="21.0" prefHeight="494.0" prefWidth="618.0" styleClass="quadradawn">
+               <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                        text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+                        wrappingWidth="428.7578125">
                      <font>
-                        <Font name="SimSun" size="33.0" />
+                        <Font size="14.0"/>
                      </font>
-                     <effect>
-                        <DropShadow>
-                           <input>
-                              <Glow />
-                           </input>
-                        </DropShadow>
-                     </effect>
-                  </Label>
-               </children>
-            </AnchorPane>
-         </content>
-      </Tab>
-      <Tab styleClass="tab-button" text="Página 2">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane" />
-            <fx:include fx:id="tab2" source="pagina2.fxml" />
-         </content>
-      </Tab>
-      <Tab styleClass="tab-button" text="Página 3">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane" />
-            <fx:include source="pagina3.fxml" />
-         </content>
-      </Tab>
-      <Tab styleClass="tab-button" text="Página 4">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane" />
-            <fx:include source="pagina4.fxml" />
-         </content>
-      </Tab>
-   </tabs>
+                  </Text>
+               </TextFlow>
+               <Button layoutX="209.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
+                       prefWidth="32.0"
+                       style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;"
+                       text=" "/>
+               <Button layoutX="259.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
+                       prefWidth="32.0"
+                       style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;"
+                       text=" "/>
+               <Button layoutX="362.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
+                       prefWidth="32.0"
+                       style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;"
+                       text=" "/>
+               <Button layoutX="309.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
+                       prefWidth="32.0"
+                       style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;"
+                       text=" "/>
+               <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="209.0" layoutY="190.0">
+                  <Image url="@ImageResources/logoazul.png"/>
+               </ImageView>
+            </Pane>
+         </Pane>
+         <Label fx:id="riosLabel" alignment="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="66.0"
+                prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
+            <font>
+               <Font name="SimSun" size="33.0"/>
+            </font>
+            <effect>
+               <DropShadow>
+                  <input>
+                     <Glow/>
+                  </input>
+               </DropShadow>
+            </effect>
+         </Label>
+      </AnchorPane>
+   </Tab>
+   <Tab styleClass="tab-button" text="Gráficos">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane"/>
+      <fx:include fx:id="tab2" source="pagina2.fxml"/>
+   </Tab>
+   <Tab styleClass="tab-button" text="Consequências">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane"/>
+      <fx:include source="pagina3.fxml"/>
+   </Tab>
+   <Tab styleClass="tab-button" text="Ações">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane"/>
+      <fx:include source="pagina4.fxml"/>
+   </Tab>
 </TabPane>

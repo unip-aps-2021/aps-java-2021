@@ -5,3 +5,7 @@
 .text-area{
     -fx-text-fill: white;
 }
+
+.pane {
+    -fx-background-color: #063047;
+}
