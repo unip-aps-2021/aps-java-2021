@@ -9,7 +9,7 @@
 <?import javafx.scene.text.TextFlow?>
 
 <AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/pagina3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina3Controller">
-   <Pane layoutX="47.0" layoutY="28.0" prefHeight="578.0" prefWidth="607.0" styleClass="pane">
+   <Pane layoutX="47.0" layoutY="25.0" prefHeight="581.0" prefWidth="609.0" styleClass="pane">
       <JFXButton fx:id="segundoBotaoMudar" layoutX="371.0" layoutY="521.0" onAction="#setSegundoBotaoMudar" opacity="0.78" prefHeight="37.0" prefWidth="222.0" styleClass="botao-mudar" text="Próxima consequência" textFill="WHITE">
          <font>
             <Font size="19.0" />
@@ -22,11 +22,11 @@
             </font>
          </Text>
       </TextFlow>
-      <HBox layoutX="127.0" layoutY="14.0" prefHeight="92.0" prefWidth="363.0">
-         <TextFlow prefHeight="78.0" prefWidth="363.0" textAlignment="CENTER">
-            <Text fx:id="textoHeader" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Principais consequências para a atmosfera" textAlignment="CENTER" wrappingWidth="335.185546875">
+      <HBox layoutX="127.0" layoutY="2.0" prefHeight="104.0" prefWidth="363.0">
+         <TextFlow prefHeight="69.0" prefWidth="363.0" textAlignment="CENTER">
+            <Text fx:id="textoHeader" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Principais consequências para a atmosfera" textAlignment="CENTER" wrappingWidth="354.185546875">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Yu Gothic Medium" size="30.0" />
                </font>
             </Text>
          </TextFlow>

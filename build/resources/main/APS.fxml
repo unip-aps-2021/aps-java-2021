@@ -14,51 +14,44 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<TabPane fx:id="tabPane" stylesheets="@css/index.css" tabClosingPolicy="UNAVAILABLE"
-         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane fx:id="tabPane" stylesheets="@css/index.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APSController">
    <Tab styleClass="tab-button" text="Início">
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane">
          <Pane layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="650.0">
             <Pane layoutX="35.0" layoutY="21.0" prefHeight="494.0" prefWidth="618.0" styleClass="quadradawn">
-               <TextFlow layoutX="84.0" layoutY="14.0" prefHeight="200.0" prefWidth="413.0">
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
-                        text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
-                        wrappingWidth="428.7578125">
+               <TextFlow layoutX="67.0" layoutY="21.0" prefHeight="204.0" prefWidth="485.0" textAlignment="JUSTIFY">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Com o objetivo de diminuir o nível de poluição no planeta e principalmente nos rios, nós, da Tech Rivers, queremos trazer números e informações sobre as consequências do descarte de lixo inadequado dos consumidores de produtos como plástico, produtos químicos e até radioativos. Queremos diminuir a poluição dos principais rios de São Paulo (com processos de despoluição) em até 70% até 2050." wrappingWidth="428.7578125">
                      <font>
-                        <Font size="14.0"/>
+                        <Font size="17.0" />
                      </font>
                   </Text>
                </TextFlow>
-               <Button layoutX="209.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
-                       prefWidth="32.0"
-                       style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;"
-                       text=" "/>
-               <Button layoutX="259.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
-                       prefWidth="32.0"
-                       style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;"
-                       text=" "/>
-               <Button layoutX="362.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
-                       prefWidth="32.0"
-                       style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;"
-                       text=" "/>
-               <Button layoutX="309.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0"
-                       prefWidth="32.0"
-                       style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;"
-                       text=" "/>
-               <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="209.0" layoutY="190.0">
-                  <Image url="@ImageResources/logoazul.png"/>
+               <Button fx:id="twitterButton" layoutX="209.0" layoutY="448.0" mnemonicParsing="false" onAction="#openTwitter" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/twitter.png); -fx-background-radius: 100;" text=" " />
+               <Button fx:id="instagramButton" layoutX="259.0" layoutY="448.0" mnemonicParsing="false" onAction="#openInstagram" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/instagram.png); -fx-background-radius: 100;" text=" " />
+               <Button fx:id="facebookButton" layoutX="362.0" layoutY="448.0" mnemonicParsing="false" onAction="#openFacebook" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/facebook.png); -fx-background-radius: 100;" text=" " />
+               <Button fx:id="linkedinButton" layoutX="309.0" layoutY="448.0" mnemonicParsing="false" onAction="#openLinkedin" prefHeight="32.0" prefWidth="32.0" style="-fx-background-image: url(/ImageResources/linkedin.png); -fx-background-radius: 100;" text=" " />
+               <ImageView fitHeight="135.0" fitWidth="160.0" layoutX="222.0" layoutY="293.0">
+                  <Image url="@ImageResources/logoazul.png" />
                </ImageView>
+               <TextFlow layoutX="67.0" layoutY="206.0" prefHeight="69.0" prefWidth="469.0" textAlignment="JUSTIFY">
+                  <children>
+                     <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Aceita saber mais? Continue acessando nossa plataforma informativa e entenda mais sobre a poluição dos rios, consequências e o que você pode fazer para ajudar." wrappingWidth="488.7012634277344">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </TextFlow>
             </Pane>
          </Pane>
-         <Label fx:id="riosLabel" alignment="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="66.0"
-                prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
+         <Label fx:id="riosLabel" alignment="CENTER" layoutX="39.0" layoutY="6.0" prefHeight="66.0" prefWidth="573.0" text="Olá! Somos a Tech Rivers!" textFill="WHITE">
             <font>
-               <Font name="SimSun" size="33.0"/>
+               <Font name="Yu Gothic Medium" size="33.0" />
             </font>
             <effect>
                <DropShadow>
                   <input>
-                     <Glow/>
+                     <Glow />
                   </input>
                </DropShadow>
             </effect>
@@ -66,15 +59,15 @@
       </AnchorPane>
    </Tab>
    <Tab styleClass="tab-button" text="Gráficos">
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane"/>
-      <fx:include fx:id="tab2" source="pagina2.fxml"/>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane" />
+      <fx:include fx:id="tab2" source="pagina2.fxml" />
    </Tab>
    <Tab styleClass="tab-button" text="Consequências">
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane"/>
-      <fx:include source="pagina3.fxml"/>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane" />
+      <fx:include source="pagina3.fxml" />
    </Tab>
    <Tab styleClass="tab-button" text="Ações">
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane"/>
-      <fx:include source="pagina4.fxml"/>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-pane" />
+      <fx:include source="pagina4.fxml" />
    </Tab>
 </TabPane>

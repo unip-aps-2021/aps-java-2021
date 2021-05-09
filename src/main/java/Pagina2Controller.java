@@ -68,9 +68,9 @@ public class Pagina2Controller {
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
                 animations.sliderAnimation(aba1, "Left", start, 10);
-                animations.sliderAnimation(aba2, "Right", start, 10);
-                animations.sliderAnimation(aba3, "Up", start, 10);
-                animations.sliderAnimation(aba4, "Down", start, 10);
+                animations.sliderAnimation(aba2, "Left", start, 10);
+                animations.sliderAnimation(aba3, "Left", start, 10);
+                animations.sliderAnimation(aba4, "Left", start, 10);
             }
         }, 0, interval);
 

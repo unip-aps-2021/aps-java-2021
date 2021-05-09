@@ -11,21 +11,23 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/APS.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/APS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/APSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/APSController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Pagina2Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Pagina2Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/APS.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/APS.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/pagina2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pagina2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/pagina3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pagina3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/pagina4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pagina4.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/APS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/APSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APSController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pagina2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pagina2Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/APS.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/APS.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/pagina3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/pagina3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/pagina4.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/pagina4.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pagina2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pagina2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pagina3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pagina3.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pagina4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pagina4.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,9 +137,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/Pagina2Controller.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/Animations.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Rio.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Animations.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Pagina2Controller.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/DAO.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1rb0VL0fuZkTj6cwEp42hxl2zAa" />
@@ -150,14 +152,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rsa-javafx-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.13908207" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="Gradle.caixa-do-flavio-3 [jar]">
     <configuration name="Launcher" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />

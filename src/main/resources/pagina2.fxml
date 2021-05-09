@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" spacing="10.0" styleClass="vbox" stylesheets="@css/pagina2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina2Controller">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" spacing="10.0" styleClass="vbox" stylesheets="@css/pagina2.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina2Controller">
    <padding>
       <Insets top="5.0" />
    </padding>
@@ -24,24 +24,24 @@
    </Label>
    <Pane prefHeight="364.0" prefWidth="700.0">
       <VBox alignment="TOP_RIGHT" layoutX="53.0" layoutY="9.0" prefHeight="267.0" prefWidth="76.0" spacing="3.0">
-         <Button fx:id="aba1" mnemonicParsing="false" onAction="#setAba1" prefHeight="22.0" prefWidth="65.0" styleClass="chart-button" textFill="WHITE">
+         <Button fx:id="aba1" mnemonicParsing="false" onAction="#setAba1" prefHeight="25.0" prefWidth="74.0" styleClass="chart-button" textFill="WHITE">
             <graphic>
-               <Label prefHeight="17.0" prefWidth="36.0" text="Aba 1" textFill="WHITE" />
+               <Label prefHeight="17.0" prefWidth="58.0" text="Mais-BR" textFill="WHITE" />
             </graphic>
          </Button>
-         <Button fx:id="aba2" layoutX="23.0" layoutY="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#setAba2" prefHeight="22.0" prefWidth="60.0" styleClass="chart-button" textFill="WHITE">
+         <Button fx:id="aba2" layoutX="23.0" layoutY="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#setAba2" prefHeight="25.0" prefWidth="74.0" styleClass="chart-button" textFill="WHITE">
             <graphic>
-               <Label prefHeight="16.0" prefWidth="33.0" text="Aba 2" textFill="WHITE" />
+               <Label prefHeight="17.0" prefWidth="62.0" text="Menos-BR" textFill="WHITE" />
             </graphic>
          </Button>
-         <Button fx:id="aba3" layoutX="26.0" layoutY="35.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#setAba3" prefHeight="22.0" prefWidth="55.0" styleClass="chart-button" textFill="WHITE">
+         <Button fx:id="aba3" layoutX="26.0" layoutY="35.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#setAba3" prefHeight="25.0" prefWidth="72.0" styleClass="chart-button" textFill="WHITE">
             <graphic>
-               <Label prefHeight="17.0" prefWidth="60.0" text="Aba 3" textFill="WHITE" />
+               <Label prefHeight="17.0" prefWidth="60.0" text="Mais-SP" textFill="WHITE" />
             </graphic>
          </Button>
-         <Button fx:id="aba4" layoutX="31.0" layoutY="60.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#setAba4" prefHeight="22.0" prefWidth="51.0" styleClass="chart-button" textFill="WHITE">
+         <Button fx:id="aba4" layoutX="31.0" layoutY="60.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#setAba4" prefHeight="25.0" prefWidth="74.0" styleClass="chart-button" textFill="WHITE">
             <graphic>
-               <Label prefHeight="16.0" prefWidth="77.0" text="Aba 4" textFill="WHITE" />
+               <Label prefHeight="17.0" prefWidth="101.0" text="Menos-SP" textFill="WHITE" />
             </graphic>
          </Button>
       </VBox>
