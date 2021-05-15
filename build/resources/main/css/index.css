@@ -12,7 +12,7 @@
 }
 
 .anchor-pane {
-    -fx-background-color:  #1287c6;
+    -fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);
     -fx-pref-width: 50%;
     -fx-pref-height: 50%;
 }

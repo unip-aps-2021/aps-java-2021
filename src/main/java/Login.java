@@ -16,6 +16,7 @@ public class Login extends Application {
         stage.getIcons().add(new Image("/ImageResources/logo.png"));
         Scene scene = new Scene(root, 700, 650);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

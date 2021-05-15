@@ -46,6 +46,7 @@ public class LoginController {
             stage.getIcons().add(new Image("/ImageResources/logo.png"));
             stage.setScene(new Scene(root1));
             stageAntes.close();
+            stage.setResizable(false);
             stage.show();
             stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
@@ -69,6 +70,7 @@ public class LoginController {
         stage.getIcons().add(new Image("/ImageResources/logo.png"));
         stage.setScene(new Scene(root));
         stageAntes.close();
+        stage.setResizable(false);
         stage.show();
     }
 }

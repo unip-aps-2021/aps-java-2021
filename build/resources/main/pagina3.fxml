@@ -10,12 +10,12 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/pagina3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina3Controller">
    <Pane layoutX="47.0" layoutY="25.0" prefHeight="581.0" prefWidth="609.0" styleClass="pane">
-      <JFXButton fx:id="segundoBotaoMudar" layoutX="371.0" layoutY="521.0" onAction="#setSegundoBotaoMudar" opacity="0.78" prefHeight="37.0" prefWidth="222.0" styleClass="botao-mudar" text="Próxima consequência" textFill="WHITE">
+      <JFXButton fx:id="segundoBotaoMudar" layoutX="371.0" layoutY="532.0" onAction="#setSegundoBotaoMudar" opacity="0.78" prefHeight="37.0" prefWidth="222.0" styleClass="botao-mudar" text="Próxima consequência" textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>
       </JFXButton>
-      <TextFlow layoutX="70.0" layoutY="87.0" prefHeight="380.0" prefWidth="467.0" textAlignment="JUSTIFY">
+      <TextFlow layoutX="70.0" layoutY="74.0" prefHeight="373.0" prefWidth="467.0" textAlignment="JUSTIFY">
          <Text fx:id="textoTextFlow" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="A poluição da água vem, principalmente, do  descarte inadequado de lixo. Todo esse lixo, seja o plástico, produtos químicos, materiais domésticos como sofá, cadeiras, eletrodomésticos, entre outros são produzidos em fábricas que, em muitas delas, há a produção de CO2 e outros gases poluentes que afetam a camada de ozônio. Com o crescente nível de gases poluentes e CO2 na atmosfera, o aquecimento global afeta cada vez mais as condições no planeta. Temos um aumento exponencial de temperatura que causa o derretimento de geleiras, aumentando o nível da água do mar, e em continentes como a Antártida, tem feito os ursos polares perderem seus pelos. Além disso, um estudo publicado pela revista Nature Climate Change diz que os ursos polares podem entrar em extinção até o ano de 2100.O aquecimento global ainda pode causar o aumento do risco de alergias, asma, doenças pulmonares e câncer nos seres humanos." textAlignment="RIGHT" wrappingWidth="463.8560791015625">
             <font>
                <Font size="17.0" />

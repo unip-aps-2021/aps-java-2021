@@ -26,7 +26,7 @@
 }
 
 .vbox {
-     -fx-background-color: #1287c6;
+     -fx-background-color: linear-gradient(to top, #59849c 0%, #3399ff 100%);
 }
 
 .pane-grafico {
