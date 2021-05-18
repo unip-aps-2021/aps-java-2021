@@ -111,7 +111,7 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba2(ActionEvent event){
-        labelGrafico.setText(new String("Mais poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
+        labelGrafico.setText(new String("Menos poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
         Rio aricanduva = rios.get(6);
         Rio kurupira = rios.get(7);
         Rio jacare = rios.get(8);
@@ -138,7 +138,7 @@ public class Pagina2Controller {
 
     @FXML
     private void setAba3(ActionEvent event){
-        labelGrafico.setText(new String("Menos poluídos do Brasil: ".getBytes(), StandardCharsets.UTF_8));
+        labelGrafico.setText(new String("Mais poluídos de São Paulo: ".getBytes(), StandardCharsets.UTF_8));
         Rio pirapata = rios.get(12);
         Rio camboio = rios.get(13);
         Rio leopardocaruru = rios.get(14);

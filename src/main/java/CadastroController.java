@@ -50,7 +50,6 @@ public class CadastroController {
                 voltaLogin();
             }
             dao.inserirUsuario(nome.getText(), email.getText(), senha.getText());
-            Login.main(new String[]{});
         }
     }
 

@@ -13,18 +13,25 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/APS.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/APS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CadastroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/CadastroController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/css/pagina2.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/css/pagina2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pagina3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pagina3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Pagina2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Pagina2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Pagina4Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TesteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TesteSQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/pagina4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pagina4.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InstanciasRios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadastroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QualidadeAgua.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/pagina2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/pagina2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pagina3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pagina3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pagina2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pagina2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pagina4Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TesteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TesteSQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pagina4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pagina4.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

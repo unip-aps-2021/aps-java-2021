@@ -5,10 +5,6 @@ Launcher.java
 Pagina3Controller.java
  Pagina3Controller
  Pagina3Controller$1
-TesteController.java
- TesteController
-TesteSQL.java
- TesteSQL
 Animations.java
  Animations
 Rio.java
@@ -17,21 +13,17 @@ Usuario.java
  Usuario
 CadastroController.java
  CadastroController
-Pagina4Controller.java
- Pagina4Controller
 DAO.java
  DAO
 Consequencia.java
  Consequencia
+LoginController.java
+ LoginController
+APS.java
+ APS
+Login.java
+ Login
 Pagina2Controller.java
  Pagina2Controller
  Pagina2Controller$1
  Pagina2Controller$2
-APS.java
- APS
- APS$1
-Login.java
- Login
-LoginController.java
- LoginController
- LoginController$1

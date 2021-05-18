@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/pagina4.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagina4Controller">
+<AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@css/pagina4.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <Pane layoutX="46.0" layoutY="14.0" prefHeight="595.0" prefWidth="608.0" styleClass="pane">
       <TextFlow layoutX="-3.0" layoutY="110.0" prefHeight="498.0" prefWidth="615.0" textAlignment="CENTER">
          <JFXTextArea editable="false" focusColor="#405aa800" prefHeight="524.0" prefWidth="582.0" styleClass="text-area" text="1 - Não jogue lixo na rua&#10;2 - Se encontrar algum lixo nas ruas, recolha e jogue no lixo mais próximo de você&#10;3 - Ao ver alguém jogando lixo na rua, tente conversar educadamente com essa pessoa e tentar conscientiza-la dos problemas que isso causa&#10;4 - Recicle seus produtos&#10;5 - Procure utilizar produtos feitos com materiais biodegradáveis&#10;6 - Compartilhe seus conhecimentos sobre o assunto com amigos, familiares e colegas de trabalho&#10;" unFocusColor="#ffffff00">
